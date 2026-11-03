@@ -1,0 +1,99 @@
+{
+ "nom": "La table au centre, les écrans à part",
+ "court": "P1 · La table au centre",
+ "palettes": [
+  "table",
+  "blanc"
+ ],
+ "nomsPalettes": {
+  "table": "Salle commune",
+  "blanc": "Murs blancs"
+ },
+ "legende": [
+  [
+   "#e2d9c9",
+   "#b9ae99",
+   "Pierre 60×120 décalée"
+  ],
+  [
+   "#9a9c9c",
+   "#6b6d6f",
+   "Terrazzo SDB/WC"
+  ],
+  [
+   "#c99f6d",
+   "#7a5a38",
+   "Bâtons rompus"
+  ],
+  [
+   "#b88b5c",
+   "#946b42",
+   "Liège (écrans)"
+  ],
+  [
+   "#3b82c4",
+   "#1f4f7d",
+   "Portes"
+  ]
+ ],
+ "passages": [
+  {
+   "nom": "Séjour : chaises nord ↔ mur de la chambre 2",
+   "x": 615,
+   "z": 290,
+   "axe": "z"
+  },
+  {
+   "nom": "Séjour : chaises sud ↔ desserte",
+   "x": 545,
+   "z": 450,
+   "axe": "z"
+  },
+  {
+   "nom": "Séjour : bout de table ↔ baie",
+   "x": 680,
+   "z": 367,
+   "axe": "x"
+  },
+  {
+   "nom": "Cuisine : plan de travail ↔ METOD",
+   "x": 455,
+   "z": 200,
+   "axe": "x",
+   "min": 90
+  },
+  {
+   "nom": "Entrée de cuisine : bar ↔ chaise nord-ouest",
+   "x": 450,
+   "z": 336,
+   "axe": "x",
+   "min": 90
+  },
+  {
+   "nom": "Chambre 2 : siège gaming ↔ meuble jeux",
+   "x": 620,
+   "z": 190,
+   "axe": "z"
+  },
+  {
+   "nom": "Balcon : meuble barbecue ↔ garde-corps",
+   "x": 790,
+   "z": 240,
+   "axe": "x"
+  },
+  {
+   "nom": "Chambre : dressing ↔ lit (ruelle)",
+   "x": 500,
+   "z": 620,
+   "axe": "x",
+   "min": 60
+  },
+  {
+   "nom": "Chambre : lit ↔ BRIMNES (ruelle)",
+   "x": 660,
+   "z": 630,
+   "axe": "x",
+   "min": 60
+  }
+ ]
+}

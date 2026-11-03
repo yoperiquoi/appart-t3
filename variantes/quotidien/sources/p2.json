@@ -1,0 +1,103 @@
+{
+ "nom": "Le circuit du matin et du linge",
+ "court": "P2 · Le circuit du linge",
+ "palettes": [
+  "linge",
+  "blanc"
+ ],
+ "nomsPalettes": {
+  "linge": "Bleu lessive",
+  "blanc": "Murs blancs"
+ },
+ "legende": [
+  [
+   "#c7c1b5",
+   "#a49d91",
+   "Grès effet béton 60×60"
+  ],
+  [
+   "#2f5d62",
+   "#c47a5e",
+   "Carreaux de ciment (entrée)"
+  ],
+  [
+   "#dfe6e3",
+   "#9aa5a1",
+   "Hexagones vert d’eau"
+  ],
+  [
+   "#d9b98c",
+   "#9c7a50",
+   "Chêne clair"
+  ],
+  [
+   "#3b82c4",
+   "#1f4f7d",
+   "Portes"
+  ]
+ ],
+ "passages": [
+  {
+   "nom": "Coin repas → cuisine : chaise est ↔ table basse",
+   "x": 470,
+   "z": 400,
+   "axe": "x",
+   "min": 90
+  },
+  {
+   "nom": "Coin repas : chaise sud ↔ placard couloir",
+   "x": 370,
+   "z": 485,
+   "axe": "z"
+  },
+  {
+   "nom": "Séjour : table basse ↔ meuble TV",
+   "x": 600,
+   "z": 330,
+   "axe": "z"
+  },
+  {
+   "nom": "Cuisine : plan de travail ↔ METOD",
+   "x": 455,
+   "z": 200,
+   "axe": "x",
+   "min": 90
+  },
+  {
+   "nom": "Chambre 1 : pied de lit ↔ BRIMNES",
+   "x": 640,
+   "z": 640,
+   "axe": "x"
+  },
+  {
+   "nom": "Chambre 1 : porte ↔ lit",
+   "x": 520,
+   "z": 540,
+   "axe": "z"
+  },
+  {
+   "nom": "Bureau : siège ↔ étagère (porte → porte-fenêtre)",
+   "x": 620,
+   "z": 180,
+   "axe": "z"
+  },
+  {
+   "nom": "SDB : trieur ↔ lavabo",
+   "x": 362,
+   "z": 630,
+   "axe": "z"
+  },
+  {
+   "nom": "Balcon : table bistrot ↔ façade",
+   "x": 760,
+   "z": 365,
+   "axe": "x"
+  },
+  {
+   "nom": "Balcon : meuble barbecue ↔ garde-corps",
+   "x": 790,
+   "z": 240,
+   "axe": "x"
+  }
+ ]
+}

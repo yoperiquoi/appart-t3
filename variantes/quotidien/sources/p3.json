@@ -1,0 +1,18 @@
+{
+ "nom":"L’arrière-cuisine",
+ "court":"P3 · L’arrière-cuisine",
+ "palettes":["service","blanc"],
+ "nomsPalettes":{"service":"Olive & ocre","blanc":"Murs blancs"},
+ "legende":[["#b8643f","#7a3f26","Tomettes hexagonales"],["#5f8f7a","#e8e4da","Zellige vert"],["#c49a4e","#ad8238","Linoléum ocre"],["#d8cdb9","#c9bca4","Moquette laine"],["#3b82c4","#1f4f7d","Portes"]],
+ "passages":[
+  {"nom":"Séjour : table basse ↔ meuble TV","x":620,"z":330,"axe":"z"},
+  {"nom":"Cuisine : plan de travail ↔ METOD","x":455,"z":200,"axe":"x","min":90},
+  {"nom":"Entrée de cuisine : tabourets ↔ méridienne","x":460,"z":345,"axe":"x","min":90},
+  {"nom":"Pièce qui travaille : siège ↔ tri","x":620,"z":180,"axe":"z"},
+  {"nom":"Pièce qui travaille : étagère ↔ colonne ménage","x":610,"z":150,"axe":"x"},
+  {"nom":"Chambre : dressing ↔ lit","x":500,"z":620,"axe":"x"},
+  {"nom":"Chambre : lit ↔ mur du balcon","x":680,"z":620,"axe":"x"},
+  {"nom":"Balcon : potager ↔ façade","x":760,"z":365,"axe":"x"},
+  {"nom":"Balcon : meuble barbecue ↔ garde-corps","x":790,"z":240,"axe":"x"}
+ ]
+}
