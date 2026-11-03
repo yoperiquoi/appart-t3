@@ -1,0 +1,21 @@
+{
+ "titre":"Proposition 5 · Le Potager perché",
+ "sous":"Proposition 5 · Le Potager perché",
+ "peintureDefaut":"potager",
+ "peintureInfo":"Murs blancs, ch. 1 tête de lit vert sauge",
+ "peintures":[["actuelle","Actuelle"],["potager","Potager"],["grenier","Grenier"]],
+ "legende":[["#c0663e","#7a3b22","Terre cuite en chevrons (séjour, cuisine, entrée)"],["#a8a49b","#6f6c66","Dalles grises sur plots (balcon)"],["#efe9dc","#2f5d62","Carreaux de ciment (atelier, ex-ch. 2)"],["#f1ede4","#cfc6b4","Zellige blanc (SDB, WC)"],["#d2b083","#8e6c42","Chêne clair (ch. 1)"],["#3b82c4","#1f4f7d","Portes"]],
+ "passages":[
+  ["Séjour : allée nord (atelier, baie)",430,259.5,712.5,314,"x"],
+  ["Séjour : entrée → bout du bar",335,340,389.5,410,"z"],
+  ["Séjour : bar → cuisine",425,260,489,345,"z"],
+  ["Séjour : devant le placard du couloir",303.4,466,433.6,520.8,"x"],
+  ["Séjour : approche de la porte de la chambre 1",446.6,438,501.5,493,"z"],
+  ["Séjour → baie (vantail nord)",660,280,712.5,365,"x"],
+  ["Allée de cuisine (≥ 90 cm)",421,150,488.5,230,"z"],
+  ["Balcon : allée du potager",729,165,783.5,575,"z"],
+  ["Chambre 1 : porte → porte-fenêtre",491,500.6,660,555.9,"x"],
+  ["Atelier : porte → porte-fenêtre",590,160,683,220,"x"],
+  ["Entrée : porte → séjour",182,420,300,516,"x"]
+ ]
+}
