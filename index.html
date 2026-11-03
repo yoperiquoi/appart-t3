@@ -293,7 +293,7 @@ function closet(x0,y0,x1,y1,mat){box(X(x0),Z(y0),X(x1),Z(y1),0,H,mat,wallGroup);
 const E=0.2,I=0.1;
 function shell(){
   wall('h',15,360,720,E,[{a:475,b:520,k:'win'},{a:640,b:690,k:'win'}]);
-  wall('v',720,15,705,E,[{a:160,b:220,k:'pf'},{a:275,b:455,k:'pf'},{a:515,b:575,k:'pf'}]);
+  wall('v',720,15,705,E,[{a:158.8,b:220,k:'pf'},{a:275,b:455,k:'pf'},{a:515,b:576.2,k:'pf'}]);
   wall('h',705,157,720,E,[]);
   wall('v',157,350,705,E,[{a:415,b:470,k:'door'}]);
   wall('h',350,157,300,E,[]);
@@ -384,7 +384,7 @@ function pfLeaf(hz,len,dir){
 }
 function common(){
   shell();kitchen();bathroom();
-  pfLeaf(220,60,-1);pfLeaf(455,65,-1);pfLeaf(515,60,1);
+  pfLeaf(220,0.9*S,-1);pfLeaf(455,0.9*S,-1);pfLeaf(515,0.9*S,1);
   rad(497,681,711,I,-1,true,0.12,0.95);
   rad(497,664,694,I,1,true,0.12,0.9);
   radV(720,26,53,E,-1,0.12,0.95);
@@ -394,7 +394,7 @@ function common(){
   floor(760,15,825,705,'grass');
   pbox(821,15,825,705,0,1.1,tm('reed',9.7,1.1),fixGroup);
   pbox(819,15,826,705,1.1,1.16,L(0x6a6e73),fixGroup);
-  [[15,160],[220,275],[455,515],[575,705]].forEach(r=>faceV(720,r[0],r[1],E,1,0,H,tm('clad',(r[1]-r[0])/S,H)));
+  [[15,158.8],[220,275],[455,515],[576.2,705]].forEach(r=>faceV(720,r[0],r[1],E,1,0,H,tm('clad',(r[1]-r[0])/S,H)));
   faceH(705,437,720,E,-1,0,H,sageMat);
 }
 function mural(ranges){
