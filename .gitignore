@@ -1,2 +1,4 @@
 ref/
 node_modules/
+.claude/
+briefs-variantes.md
