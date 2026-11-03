@@ -369,8 +369,22 @@ function bathroom(){
   fix(387,572,435,695,0.55,0xffffff);
   toilets();
 }
+function pfLeaf(hz,len,dir){
+  const fx=720-E*S/2,t=1.6,fr=L(0x3a3d40),z0=dir>0?hz:hz-t,z1=z0+t;
+  pbox(fx-len,z0,fx,z1,0,0.06,fr,wallGroup);
+  pbox(fx-len,z0,fx,z1,2.14,2.2,fr,wallGroup);
+  pbox(fx-len,z0,fx-len+3,z1,0,2.2,fr,wallGroup);
+  pbox(fx-3,z0,fx,z1,0,2.2,fr,wallGroup);
+  pbox(fx-len+3,z0+0.4,fx-3,z1-0.4,0.06,2.14,glassMat,wallGroup);
+  pbox(fx-len+3,z0-1,fx-len+4,z0,1.0,1.12,L(0x1d1d1f),wallGroup);
+  const r=len/S,m=new THREE.Mesh(new THREE.RingGeometry(r-0.02,r,32,1,dir>0?Math.PI:Math.PI/2,Math.PI/2),new THREE.MeshBasicMaterial({color:0x3b82c4,transparent:true,opacity:0.55,side:THREE.DoubleSide}));
+  m.rotation.x=-Math.PI/2;m.position.set(X(fx),0.006,Z(hz));floorGroup.add(m);
+  const s=new THREE.Mesh(new THREE.CircleGeometry(r,32,dir>0?Math.PI:Math.PI/2,Math.PI/2),new THREE.MeshBasicMaterial({color:0x3b82c4,transparent:true,opacity:0.1,side:THREE.DoubleSide}));
+  s.rotation.x=-Math.PI/2;s.position.set(X(fx),0.005,Z(hz));floorGroup.add(s);
+}
 function common(){
   shell();kitchen();bathroom();
+  pfLeaf(160,60,1);pfLeaf(455,65,-1);pfLeaf(515,60,1);
   rad(497,681,711,I,-1,true,0.12,0.95);
   rad(497,664,694,I,1,true,0.12,0.9);
   radV(720,26,53,E,-1,0.12,0.95);
@@ -411,7 +425,7 @@ function furniture(){
   pbox(x0,z0,x1,z0+0.2*S,0.42,0.85,fab,g);
   pbox(x1-0.2*S,z0,x1,cz1,0.42,0.85,fab,g);
   pbox(x0,z0,x0+0.18*S,z1,0.42,0.62,fab,g);
-  const ctx0=645-0.5*S,ctx1=ctx0+1.0*S,ctz0=380,ctz1=ctz0+0.55*S;
+  const ctx1=642,ctx0=ctx1-0.9*S,ctz0=386,ctz1=ctz0+0.5*S;
   pbox(ctx0,ctz0,ctx1,ctz1,0.38,0.42,L(0xcaa97c),g);
   pbox(ctx0+2,ctz0+2,ctx1-2,ctz1-2,0,0.38,L(0x5a4330),g);
   const ag=new THREE.Group(),h=0.4,am=L(theme().arm),ac=L(theme().armC),wd=L(0x5a4330);
