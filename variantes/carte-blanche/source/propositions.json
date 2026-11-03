@@ -1,0 +1,172 @@
+[
+ {
+  "nom": "Les cabanes",
+  "titre": "Carte blanche 1 · Les cabanes",
+  "palettes": {
+   "bois": "Bois & ocre",
+   "nuit": "Nuit bretonne"
+  },
+  "legende": [
+   [
+    "#c0663f",
+    "#7a3a20",
+    "Tomettes hexagonales"
+   ],
+   [
+    "#2f6b55",
+    "#1d3f33",
+    "Zellige vert"
+   ],
+   [
+    "#c79a62",
+    "#6f5230",
+    "Chêne huilé"
+   ],
+   [
+    "#c8a06a",
+    "#a77f4d",
+    "Menuiseries chêne"
+   ],
+   [
+    "#3b82c4",
+    "#1f4f7d",
+    "Portes"
+   ]
+  ]
+ },
+ {
+  "nom": "La salle à manger fermée",
+  "titre": "Carte blanche 2 · La salle à manger fermée",
+  "palettes": {
+   "club": "Club anglais",
+   "bordeaux": "Lie-de-vin"
+  },
+  "legende": [
+   [
+    "#efece4",
+    "#2a2a2a",
+    "Octogones et cabochons"
+   ],
+   [
+    "#1f1f1f",
+    "#efede6",
+    "Damier en diagonale"
+   ],
+   [
+    "#6b4831",
+    "#2e1e14",
+    "Point de Hongrie noyer"
+   ],
+   [
+    "#d2b083",
+    "#8a6a45",
+    "Point de Hongrie chêne"
+   ],
+   [
+    "#3b82c4",
+    "#1f4f7d",
+    "Portes"
+   ]
+  ]
+ },
+ {
+  "nom": "La tanière",
+  "titre": "Carte blanche 3 · La tanière",
+  "palettes": {
+   "petrole": "Bleu pétrole",
+   "aubergine": "Aubergine"
+  },
+  "legende": [
+   [
+    "#ece6da",
+    "#cfc6b6",
+    "Terrazzo clair"
+   ],
+   [
+    "#3e4043",
+    "#2a2b2d",
+    "Terrazzo anthracite"
+   ],
+   [
+    "#2f4a3a",
+    "#263c2c",
+    "Moquette (tanière)"
+   ],
+   [
+    "#b98d5c",
+    "#8a5f37",
+    "Liège"
+   ],
+   [
+    "#3b82c4",
+    "#1f4f7d",
+    "Portes"
+   ]
+  ]
+ },
+ {
+  "nom": "La diagonale",
+  "titre": "Carte blanche 4 · La diagonale",
+  "palettes": {
+   "craie": "Craie & cobalt",
+   "corail": "Corail & vert"
+  },
+  "legende": [
+   [
+    "#e3dccf",
+    "#b9b0a0",
+    "Grès 60 × 60 posé à 45°"
+   ],
+   [
+    "#8fb3a6",
+    "#e9efe9",
+    "Bâtonnets en chevrons"
+   ],
+   [
+    "#c99a62",
+    "#7a5634",
+    "Parquet à l'anglaise posé à 45°"
+   ],
+   [
+    "#3b82c4",
+    "#1f4f7d",
+    "Portes"
+   ]
+  ]
+ },
+ {
+  "nom": "La jungle revient",
+  "titre": "Carte blanche 5 · La jungle revient",
+  "palettes": {
+   "jungle": "Jungle",
+   "serre": "Serre"
+  },
+  "legende": [
+   [
+    "#efe8d8",
+    "#5e8a66",
+    "Carreaux de ciment feuillage"
+   ],
+   [
+    "#2f4a3a",
+    "#e9e2cf",
+    "Carreaux de ciment vert"
+   ],
+   [
+    "#6e5038",
+    "#3a2a1c",
+    "Chêne fumé"
+   ],
+   [
+    "#c9b79a",
+    "#9a8a70",
+    "Dalles (balcon)"
+   ],
+   [
+    "#3b82c4",
+    "#1f4f7d",
+    "Portes"
+   ]
+  ]
+ }
+]
