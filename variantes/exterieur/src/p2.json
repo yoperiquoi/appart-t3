@@ -1,0 +1,25 @@
+{
+ "titre":"Proposition 2 · La Tablée d'été",
+ "sous":"Proposition 2 · La Tablée d'été",
+ "peintureDefaut":"tomate",
+ "peintureInfo":"Murs blancs, ch. 1 tête de lit vert sauge",
+ "peintures":[["actuelle","Actuelle"],["tomate","Tomate séchée"],["prusse","Bleu de Prusse"]],
+ "legende":[["#ecebe6","#c9c6bd","Terrazzo blanc (séjour, cuisine, entrée)"],["#e4e1d9","#a9a59b","Terrazzo extérieur (balcon)"],["#9fb4a3","#7e927f","Terrazzo sauge (SDB, WC)"],["#6e5038","#3b2a1c","Chêne fumé (ch. 2)"],["#d7b98c","#9c7a4c","Point de Hongrie (ch. 1)"],["#3b82c4","#1f4f7d","Portes"]],
+ "passages":[
+  ["Séjour : allée nord (chambre 2)",430,259.5,630,314,"x"],
+  ["Séjour : entrée → bout du bar",335,340,389.5,410,"z"],
+  ["Séjour : bar → cuisine",425,260,489,345,"z"],
+  ["Séjour : devant le placard du couloir",303.4,466,433.6,520.8,"x"],
+  ["Séjour : approche de la porte de la chambre 1",446.6,438,501.5,493,"z"],
+  ["Séjour : allée sud entrée → baie",440,438.5,645,493,"x"],
+  ["Séjour → baie (vantail sud)",645,372,712.5,455,"x"],
+  ["Allée de cuisine (≥ 90 cm)",421,150,488.5,230,"z"],
+  ["Balcon : sortie de la baie",728,372,783,455,"x"],
+  ["Balcon : allée nord (cuisine d'été)",764,165,819,290,"z"],
+  ["Balcon : allée devant la baie",728,285,783,460,"z"],
+  ["Balcon : allée sud",764,455,819,570,"z"],
+  ["Chambre 1 : porte → porte-fenêtre",491,500.6,660,555.9,"x"],
+  ["Chambre 2 : porte → porte-fenêtre",590,160,683,220,"x"],
+  ["Entrée : porte → séjour",182,420,300,516,"x"]
+ ]
+}

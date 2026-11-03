@@ -1,0 +1,22 @@
+{
+ "titre":"Proposition 1 · L'Orangerie",
+ "sous":"Proposition 1 · L'Orangerie",
+ "peintureDefaut":"serre",
+ "peintureInfo":"Murs blancs, ch. 1 tête de lit vert sauge",
+ "peintures":[["actuelle","Actuelle"],["serre","Vert serre"],["agrume","Agrumes"]],
+ "legende":[["#c0663e","#7a3b22","Tomettes hexagonales (orangerie, entrée, balcon)"],["#e6dfd1","#bdb09a","Calcaire clair 60 × 60"],["#4a8a78","#2f6a5c","Zellige vert (SDB, WC)"],["#cdb88f","#9c865c","Jonc de mer (chambres)"],["#b4522f","#b4522f","Placard couloir"],["#3b82c4","#1f4f7d","Portes"]],
+ "passages":[
+  ["Séjour : allée nord (chambre 2, orangerie)",430,259.5,630,314,"x"],
+  ["Séjour : entrée → bout du bar",335,340,389.5,410,"z"],
+  ["Séjour : bar → cuisine",425,260,500,345,"z"],
+  ["Séjour : devant le placard du couloir",303.4,466,433.6,520.8,"x"],
+  ["Séjour : approche de la porte de la chambre 1",446.6,438,501.5,493,"z"],
+  ["Allée de cuisine (≥ 90 cm)",421,150,488.5,230,"z"],
+  ["Orangerie → baie (vantail nord)",640,285,712.5,364,"x"],
+  ["Balcon : sortie de la baie",728,285,763,364,"x"],
+  ["Balcon : traversée ch. 2 → ch. 1",764,165,819,570,"z"],
+  ["Chambre 1 : porte → porte-fenêtre",491,500.6,660,555.9,"x"],
+  ["Chambre 2 : porte → porte-fenêtre",590,160,683,220,"x"],
+  ["Entrée : porte → séjour",182,420,300,516,"x"]
+ ]
+}

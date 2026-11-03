@@ -1,0 +1,23 @@
+{
+ "titre":"Proposition 4 · L'Engawa",
+ "sous":"Proposition 4 · L'Engawa",
+ "peintureDefaut":"washi",
+ "peintureInfo":"Murs blancs, ch. 1 mur sud vert sauge",
+ "peintures":[["actuelle","Actuelle"],["washi","Washi"],["sumi","Sumi"]],
+ "legende":[["#b9b6b0","#8f8c86","Grès effet béton 120 × 60 (séjour, cuisine)"],["#4a4e53","#2b2d30","Ardoise (genkan d'entrée)"],["#9b7b58","#4f3d2a","Platelage engawa (balcon)"],["#c8c58f","#2c2c28","Tatami (ch. 2)"],["#c9a171","#7d5c36","Grès effet hinoki (SDB, WC)"],["#d2b083","#8e6c42","Chêne clair (ch. 1)"],["#3b82c4","#1f4f7d","Portes"]],
+ "passages":[
+  ["Séjour : allée nord (chambre 2)",430,259.5,592,314,"x"],
+  ["Séjour : entrée → bout du bar",335,340,389.5,410,"z"],
+  ["Séjour : bar → cuisine",425,260,489,345,"z"],
+  ["Séjour : devant le placard du couloir",303.4,466,433.6,520.8,"x"],
+  ["Séjour : approche de la porte de la chambre 1",446.6,438,501.5,493,"z"],
+  ["Séjour : allée le long de la baie",656,280,712.5,455,"z"],
+  ["Séjour → baie (vantail nord)",656,285,712.5,365,"x"],
+  ["Allée de cuisine (≥ 90 cm)",421,150,488.5,230,"z"],
+  ["Balcon : sortie de la baie",728,285,783,365,"x"],
+  ["Balcon : allée le long de l'engawa",764,165,819,570,"z"],
+  ["Chambre 1 : porte → porte-fenêtre",491,500.6,660,555.5,"x"],
+  ["Chambre 2 : porte → porte-fenêtre",590,160,683,220,"x"],
+  ["Entrée : porte → séjour",182,420,300,516,"x"]
+ ]
+}

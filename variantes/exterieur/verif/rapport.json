@@ -1,0 +1,497 @@
+{
+ "1": {
+  "erreursJS": [],
+  "conflits": [],
+  "passages": [
+   {
+    "n": "Séjour : allée nord (chambre 2, orangerie)",
+    "par": "",
+    "annonce": 80.1,
+    "mesure": 89.7,
+    "bloque": false
+   },
+   {
+    "n": "Séjour : entrée → bout du bar",
+    "par": "",
+    "annonce": 80.1,
+    "mesure": 286.8,
+    "bloque": false
+   },
+   {
+    "n": "Séjour : bar → cuisine",
+    "par": "",
+    "annonce": 110.3,
+    "mesure": 113.2,
+    "bloque": false
+   },
+   {
+    "n": "Séjour : devant le placard du couloir",
+    "par": "",
+    "annonce": 80.6,
+    "mesure": 251.9,
+    "bloque": false
+   },
+   {
+    "n": "Séjour : approche de la porte de la chambre 1",
+    "par": "",
+    "annonce": 80.7,
+    "mesure": 471.9,
+    "bloque": false
+   },
+   {
+    "n": "Allée de cuisine (≥ 90 cm)",
+    "par": "",
+    "annonce": 99.3,
+    "mesure": 100.7,
+    "bloque": false
+   },
+   {
+    "n": "Orangerie → baie (vantail nord)",
+    "par": "",
+    "annonce": 116.2,
+    "mesure": 133.1,
+    "bloque": false
+   },
+   {
+    "n": "Balcon : sortie de la baie",
+    "par": "",
+    "annonce": 116.2,
+    "mesure": 147.8,
+    "bloque": false
+   },
+   {
+    "n": "Balcon : traversée ch. 2 → ch. 1",
+    "par": "",
+    "annonce": 80.9,
+    "mesure": 81.6,
+    "bloque": false
+   },
+   {
+    "n": "Chambre 1 : porte → porte-fenêtre",
+    "par": "",
+    "annonce": 81.3,
+    "mesure": 81.3,
+    "bloque": false
+   },
+   {
+    "n": "Chambre 2 : porte → porte-fenêtre",
+    "par": "",
+    "annonce": 88.2,
+    "mesure": 111,
+    "bloque": false
+   },
+   {
+    "n": "Entrée : porte → séjour",
+    "par": "",
+    "annonce": 141.2,
+    "mesure": 145.6,
+    "bloque": false
+   }
+  ],
+  "meublesHorsMarqueur": 0,
+  "elements": 42
+ },
+ "2": {
+  "erreursJS": [],
+  "conflits": [],
+  "passages": [
+   {
+    "n": "Séjour : allée nord (chambre 2)",
+    "par": "",
+    "annonce": 80.1,
+    "mesure": 81.6,
+    "bloque": false
+   },
+   {
+    "n": "Séjour : entrée → bout du bar",
+    "par": "",
+    "annonce": 80.1,
+    "mesure": 203.7,
+    "bloque": false
+   },
+   {
+    "n": "Séjour : bar → cuisine",
+    "par": "",
+    "annonce": 94.1,
+    "mesure": 95.6,
+    "bloque": false
+   },
+   {
+    "n": "Séjour : devant le placard du couloir",
+    "par": "",
+    "annonce": 80.6,
+    "mesure": 251.9,
+    "bloque": false
+   },
+   {
+    "n": "Séjour : approche de la porte de la chambre 1",
+    "par": "",
+    "annonce": 80.7,
+    "mesure": 730,
+    "bloque": false
+   },
+   {
+    "n": "Séjour : allée sud entrée → baie",
+    "par": "",
+    "annonce": 80.1,
+    "mesure": 81.6,
+    "bloque": false
+   },
+   {
+    "n": "Séjour → baie (vantail sud)",
+    "par": "",
+    "annonce": 122.1,
+    "mesure": 125,
+    "bloque": false
+   },
+   {
+    "n": "Allée de cuisine (≥ 90 cm)",
+    "par": "",
+    "annonce": 99.3,
+    "mesure": 100.7,
+    "bloque": false
+   },
+   {
+    "n": "Balcon : sortie de la baie",
+    "par": "",
+    "annonce": 122.1,
+    "mesure": 314.7,
+    "bloque": false
+   },
+   {
+    "n": "Balcon : allée nord (cuisine d'été)",
+    "par": "",
+    "annonce": 80.9,
+    "mesure": 83.8,
+    "bloque": false
+   },
+   {
+    "n": "Balcon : allée devant la baie",
+    "par": "",
+    "annonce": 80.9,
+    "mesure": 85.3,
+    "bloque": false
+   },
+   {
+    "n": "Balcon : allée sud",
+    "par": "",
+    "annonce": 80.9,
+    "mesure": 81.6,
+    "bloque": false
+   },
+   {
+    "n": "Chambre 1 : porte → porte-fenêtre",
+    "par": "",
+    "annonce": 81.3,
+    "mesure": 81.3,
+    "bloque": false
+   },
+   {
+    "n": "Chambre 2 : porte → porte-fenêtre",
+    "par": "",
+    "annonce": 88.2,
+    "mesure": 119.1,
+    "bloque": false
+   },
+   {
+    "n": "Entrée : porte → séjour",
+    "par": "",
+    "annonce": 141.2,
+    "mesure": 145.6,
+    "bloque": false
+   }
+  ],
+  "meublesHorsMarqueur": 0,
+  "elements": 37
+ },
+ "3": {
+  "erreursJS": [],
+  "conflits": [],
+  "passages": [
+   {
+    "n": "Séjour : allée nord (chambre, cuisine)",
+    "par": "",
+    "annonce": 131.6,
+    "mesure": 143.4,
+    "bloque": false
+   },
+   {
+    "n": "Séjour : entrée → bout du bar",
+    "par": "",
+    "annonce": 80.1,
+    "mesure": 276.5,
+    "bloque": false
+   },
+   {
+    "n": "Séjour : bar → cuisine",
+    "par": "",
+    "annonce": 94.1,
+    "mesure": 247.1,
+    "bloque": false
+   },
+   {
+    "n": "Séjour : devant le placard du couloir",
+    "par": "",
+    "annonce": 80.6,
+    "mesure": 88.7,
+    "bloque": false
+   },
+   {
+    "n": "Séjour : approche du bureau (ex-ch. 1)",
+    "par": "",
+    "annonce": 80.7,
+    "mesure": 220.4,
+    "bloque": false
+   },
+   {
+    "n": "Séjour : entre les canapés → baie",
+    "par": "",
+    "annonce": 111.8,
+    "mesure": 158.1,
+    "bloque": false
+   },
+   {
+    "n": "Allée de cuisine (≥ 90 cm)",
+    "par": "",
+    "annonce": 99.3,
+    "mesure": 100.7,
+    "bloque": false
+   },
+   {
+    "n": "Balcon : sortie de la baie",
+    "par": "",
+    "annonce": 111.8,
+    "mesure": 288.2,
+    "bloque": false
+   },
+   {
+    "n": "Balcon : allée nord",
+    "par": "",
+    "annonce": 80.9,
+    "mesure": 94.1,
+    "bloque": false
+   },
+   {
+    "n": "Balcon : allée devant la baie",
+    "par": "",
+    "annonce": 80.9,
+    "mesure": 135.3,
+    "bloque": false
+   },
+   {
+    "n": "Balcon : allée sud (bureau d'été)",
+    "par": "",
+    "annonce": 80.9,
+    "mesure": 81.6,
+    "bloque": false
+   },
+   {
+    "n": "Bureau : porte → porte-fenêtre",
+    "par": "",
+    "annonce": 94.1,
+    "mesure": 113.2,
+    "bloque": false
+   },
+   {
+    "n": "Chambre : porte → porte-fenêtre",
+    "par": "",
+    "annonce": 80.9,
+    "mesure": 80.9,
+    "bloque": false
+   },
+   {
+    "n": "Entrée : porte → séjour",
+    "par": "",
+    "annonce": 141.2,
+    "mesure": 145.6,
+    "bloque": false
+   }
+  ],
+  "meublesHorsMarqueur": 0,
+  "elements": 38
+ },
+ "4": {
+  "erreursJS": [],
+  "conflits": [],
+  "passages": [
+   {
+    "n": "Séjour : allée nord (chambre 2)",
+    "par": "",
+    "annonce": 80.1,
+    "mesure": 135.3,
+    "bloque": false
+   },
+   {
+    "n": "Séjour : entrée → bout du bar",
+    "par": "",
+    "annonce": 80.1,
+    "mesure": 362.5,
+    "bloque": false
+   },
+   {
+    "n": "Séjour : bar → cuisine",
+    "par": "",
+    "annonce": 94.1,
+    "mesure": 259.6,
+    "bloque": false
+   },
+   {
+    "n": "Séjour : devant le placard du couloir",
+    "par": "",
+    "annonce": 80.6,
+    "mesure": 99.7,
+    "bloque": false
+   },
+   {
+    "n": "Séjour : approche de la porte de la chambre 1",
+    "par": "",
+    "annonce": 80.7,
+    "mesure": 231.5,
+    "bloque": false
+   },
+   {
+    "n": "Séjour : allée le long de la baie",
+    "par": "",
+    "annonce": 83.1,
+    "mesure": 95.6,
+    "bloque": false
+   },
+   {
+    "n": "Séjour → baie (vantail nord)",
+    "par": "",
+    "annonce": 117.6,
+    "mesure": 265.4,
+    "bloque": false
+   },
+   {
+    "n": "Allée de cuisine (≥ 90 cm)",
+    "par": "",
+    "annonce": 99.3,
+    "mesure": 100.7,
+    "bloque": false
+   },
+   {
+    "n": "Balcon : sortie de la baie",
+    "par": "",
+    "annonce": 117.6,
+    "mesure": 273.5,
+    "bloque": false
+   },
+   {
+    "n": "Balcon : allée le long de l'engawa",
+    "par": "",
+    "annonce": 80.9,
+    "mesure": 94.1,
+    "bloque": false
+   },
+   {
+    "n": "Chambre 1 : porte → porte-fenêtre",
+    "par": "",
+    "annonce": 80.7,
+    "mesure": 81.5,
+    "bloque": false
+   },
+   {
+    "n": "Chambre 2 : porte → porte-fenêtre",
+    "par": "",
+    "annonce": 88.2,
+    "mesure": 103.7,
+    "bloque": false
+   },
+   {
+    "n": "Entrée : porte → séjour",
+    "par": "",
+    "annonce": 141.2,
+    "mesure": 145.6,
+    "bloque": false
+   }
+  ],
+  "meublesHorsMarqueur": 0,
+  "elements": 34
+ },
+ "5": {
+  "erreursJS": [],
+  "conflits": [],
+  "passages": [
+   {
+    "n": "Séjour : allée nord (atelier, baie)",
+    "par": "",
+    "annonce": 80.1,
+    "mesure": 86.8,
+    "bloque": false
+   },
+   {
+    "n": "Séjour : entrée → bout du bar",
+    "par": "",
+    "annonce": 80.1,
+    "mesure": 350,
+    "bloque": false
+   },
+   {
+    "n": "Séjour : bar → cuisine",
+    "par": "",
+    "annonce": 94.1,
+    "mesure": 176.5,
+    "bloque": false
+   },
+   {
+    "n": "Séjour : devant le placard du couloir",
+    "par": "",
+    "annonce": 80.6,
+    "mesure": 251.9,
+    "bloque": false
+   },
+   {
+    "n": "Séjour : approche de la porte de la chambre 1",
+    "par": "",
+    "annonce": 80.7,
+    "mesure": 495.4,
+    "bloque": false
+   },
+   {
+    "n": "Séjour → baie (vantail nord)",
+    "par": "",
+    "annonce": 125,
+    "mesure": 164,
+    "bloque": false
+   },
+   {
+    "n": "Allée de cuisine (≥ 90 cm)",
+    "par": "",
+    "annonce": 99.3,
+    "mesure": 100.7,
+    "bloque": false
+   },
+   {
+    "n": "Balcon : allée du potager",
+    "par": "",
+    "annonce": 80.1,
+    "mesure": 80.1,
+    "bloque": false
+   },
+   {
+    "n": "Chambre 1 : porte → porte-fenêtre",
+    "par": "",
+    "annonce": 81.3,
+    "mesure": 81.3,
+    "bloque": false
+   },
+   {
+    "n": "Atelier : porte → porte-fenêtre",
+    "par": "",
+    "annonce": 88.2,
+    "mesure": 148.5,
+    "bloque": false
+   },
+   {
+    "n": "Entrée : porte → séjour",
+    "par": "",
+    "annonce": 141.2,
+    "mesure": 145.6,
+    "bloque": false
+   }
+  ],
+  "meublesHorsMarqueur": 0,
+  "elements": 33
+ }
+}

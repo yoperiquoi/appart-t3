@@ -1,0 +1,24 @@
+{
+ "titre":"Proposition 3 · Le Bureau d'été",
+ "sous":"Proposition 3 · Le Bureau d'été",
+ "peintureDefaut":"foret",
+ "peintureInfo":"Murs blancs, ch. 1 mur sud vert sauge",
+ "peintures":[["actuelle","Actuelle"],["foret","Sous-bois"],["sable","Dune"]],
+ "legende":[["#c9a171","#7d5c36","Grès effet bois, lames vers le balcon"],["#9b7b58","#4f3d2a","Platelage bois (balcon, même sens)"],["#b88a5a","#8f6a42","Liège (bureau, ex-ch. 1)"],["#d7b98c","#9c7a4c","Point de Hongrie (chambre, ex-ch. 2)"],["#4a4e53","#2b2d30","Ardoise (SDB, WC)"],["#3b82c4","#1f4f7d","Portes"]],
+ "passages":[
+  ["Séjour : allée nord (chambre, cuisine)",430,259.5,592,349,"x"],
+  ["Séjour : entrée → bout du bar",335,340,389.5,410,"z"],
+  ["Séjour : bar → cuisine",425,260,489,345,"z"],
+  ["Séjour : devant le placard du couloir",303.4,466,433.6,520.8,"x"],
+  ["Séjour : approche du bureau (ex-ch. 1)",446.6,438,501.5,493,"z"],
+  ["Séjour : entre les canapés → baie",596,335,712.5,411,"x"],
+  ["Allée de cuisine (≥ 90 cm)",421,150,488.5,230,"z"],
+  ["Balcon : sortie de la baie",728,335,783,411,"x"],
+  ["Balcon : allée nord",764,165,819,290,"z"],
+  ["Balcon : allée devant la baie",764,285,819,460,"z"],
+  ["Balcon : allée sud (bureau d'été)",764,455,819,575,"z"],
+  ["Bureau : porte → porte-fenêtre",491,506,660,570,"x"],
+  ["Chambre : porte → porte-fenêtre",590,162,683,217,"x"],
+  ["Entrée : porte → séjour",182,420,300,516,"x"]
+ ]
+}
