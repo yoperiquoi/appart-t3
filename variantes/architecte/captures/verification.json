@@ -1,0 +1,342 @@
+{
+ "proposition-1.html": {
+  "collisions": [],
+  "zones": [],
+  "passages": [
+   {
+    "n": "Entrée → séjour (ouverture)",
+    "w": 292,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Séjour : derrière le banc (nord de la table)",
+    "w": 83,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Séjour : derrière les chaises (sud de la table)",
+    "w": 80,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Séjour : bout de table → baie",
+    "w": 83,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Séjour → porte ch. 1",
+    "w": 473,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Cuisine : allée entre plan de travail et METOD",
+    "w": 99,
+    "mn": 90,
+    "ok": true
+   },
+   {
+    "n": "Ch. 1 : porte → porte-fenêtre (pied de lit)",
+    "w": 80,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Ch. 2 : porte → porte-fenêtre",
+    "w": 141,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Balcon : allée le long de la façade",
+    "w": 81,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Entrée : devant le banc",
+    "w": 161,
+    "mn": 80,
+    "ok": true
+   }
+  ],
+  "items": 44,
+  "errors": []
+ },
+ "proposition-2.html": {
+  "collisions": [],
+  "zones": [],
+  "passages": [
+   {
+    "n": "Entrée → séjour (ouverture)",
+    "w": 246,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Galerie derrière le canapé (vers ch. 2 et baie)",
+    "w": 80,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Bibliothèque : passage nord",
+    "w": 104,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Bibliothèque : passage sud",
+    "w": 81,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Salon : allée canapé → baie",
+    "w": 128,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Salle à manger : chaise sud → mur ch. 1",
+    "w": 89,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Cuisine : allée (METOD sortis)",
+    "w": 141,
+    "mn": 90,
+    "ok": true
+   },
+   {
+    "n": "Ch. 1 : porte → porte-fenêtre (pied de lit)",
+    "w": 80,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Ch. 2 : porte → porte-fenêtre",
+    "w": 163,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Balcon : allée façade (ch. 2 → séjour → ch. 1)",
+    "w": 84,
+    "mn": 80,
+    "ok": true
+   }
+  ],
+  "items": 38,
+  "errors": []
+ },
+ "proposition-3.html": {
+  "collisions": [],
+  "zones": [],
+  "passages": [
+   {
+    "n": "Entrée → séjour (ouverture)",
+    "w": 292,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Séjour : table → banquette",
+    "w": 107,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Séjour : table basse → baie",
+    "w": 120,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Séjour : derrière les chaises nord → ch. 2",
+    "w": 89,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Cuisine : allée entre plan de travail et METOD",
+    "w": 99,
+    "mn": 90,
+    "ok": true
+   },
+   {
+    "n": "Cabine : porte → porte-fenêtre",
+    "w": 89,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Atelier : porte → porte-fenêtre",
+    "w": 87,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Atelier : devant le dressing-bibliothèque",
+    "w": 164,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Balcon : allée façade (ch. 2 → séjour → ch. 1)",
+    "w": 89,
+    "mn": 80,
+    "ok": true
+   }
+  ],
+  "items": 42,
+  "errors": []
+ },
+ "proposition-4.html": {
+  "collisions": [],
+  "zones": [],
+  "passages": [
+   {
+    "n": "Entrée → séjour (ouverture)",
+    "w": 180,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Entrée → salon : bout de l'îlot-table → mur ch. 1",
+    "w": 103,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Séjour : îlot → salon (devant la TV)",
+    "w": 114,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Séjour : entre chaises de l'îlot et canapé",
+    "w": 82,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Salon : vers la baie",
+    "w": 86,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Cuisine : allée entre plan de travail et METOD",
+    "w": 99,
+    "mn": 90,
+    "ok": true
+   },
+   {
+    "n": "Cuisine → séjour : derrière les tabourets",
+    "w": 100,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Ch. 1 : porte → porte-fenêtre (pied de lit)",
+    "w": 80,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Ch. 1 : ruelle est (vers la porte-fenêtre)",
+    "w": 82,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Ch. 2 : porte → porte-fenêtre",
+    "w": 154,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Balcon : allée façade (ch. 2 → séjour → ch. 1)",
+    "w": 104,
+    "mn": 80,
+    "ok": true
+   }
+  ],
+  "items": 40,
+  "errors": []
+ },
+ "proposition-5.html": {
+  "collisions": [],
+  "zones": [],
+  "passages": [
+   {
+    "n": "Entrée → séjour (ouverture)",
+    "w": 266,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Séjour : nord du canapé (vers ch. 2 et baie)",
+    "w": 84,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Séjour : sud du canapé (vers la baie)",
+    "w": 81,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Séjour : chaise sud → mur ch. 1",
+    "w": 84,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Séjour : vers la baie (entre bibliothèque basse et table basse)",
+    "w": 100,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Cuisine : allée entre plan de travail et METOD",
+    "w": 99,
+    "mn": 90,
+    "ok": true
+   },
+   {
+    "n": "Ch. 1 : porte → porte-fenêtre (pied de lit)",
+    "w": 80,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Ch. 1 : devant les placards intégrés",
+    "w": 88,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Ch. 2 : porte → porte-fenêtre",
+    "w": 118,
+    "mn": 80,
+    "ok": true
+   },
+   {
+    "n": "Balcon : allée façade (ch. 2 → séjour → ch. 1)",
+    "w": 84,
+    "mn": 80,
+    "ok": true
+   }
+  ],
+  "items": 38,
+  "errors": []
+ }
+}
