@@ -1,0 +1,103 @@
+{
+ "nom": "La salle à manger fermée",
+ "court": "P5 · La salle à manger fermée",
+ "palettes": [
+  "diner",
+  "blanc"
+ ],
+ "nomsPalettes": {
+  "diner": "Brique & bleu nuit",
+  "blanc": "Murs blancs"
+ },
+ "legende": [
+  [
+   "#6d7378",
+   "#4c5156",
+   "Pierre bleue 60×60"
+  ],
+  [
+   "#e6cfc4",
+   "#b98b7b",
+   "Terrazzo rose"
+  ],
+  [
+   "#d2aa79",
+   "#8a6a44",
+   "Bâtons rompus (salle à manger)"
+  ],
+  [
+   "#7a573b",
+   "#3e2a1a",
+   "Noyer (chambre)"
+  ],
+  [
+   "#3b82c4",
+   "#1f4f7d",
+   "Portes"
+  ]
+ ],
+ "passages": [
+  {
+   "nom": "Séjour : TV ↔ bureau (accès baie)",
+   "x": 690,
+   "z": 300,
+   "axe": "z"
+  },
+  {
+   "nom": "Séjour : pouf ↔ mur (vers la salle à manger)",
+   "x": 550,
+   "z": 300,
+   "axe": "z"
+  },
+  {
+   "nom": "Cuisine : plan de travail ↔ METOD",
+   "x": 455,
+   "z": 200,
+   "axe": "x",
+   "min": 90
+  },
+  {
+   "nom": "Entrée de cuisine : bar ↔ pouf",
+   "x": 470,
+   "z": 335,
+   "axe": "x",
+   "min": 90
+  },
+  {
+   "nom": "Salle à manger : chaises sud ↔ buffet",
+   "x": 620,
+   "z": 200,
+   "axe": "z"
+  },
+  {
+   "nom": "Chambre : dressing ↔ lit",
+   "x": 500,
+   "z": 600,
+   "axe": "x"
+  },
+  {
+   "nom": "Chambre : pied de lit ↔ mur",
+   "x": 585,
+   "z": 670,
+   "axe": "z"
+  },
+  {
+   "nom": "Chambre : lit ↔ porte-fenêtre",
+   "x": 680,
+   "z": 600,
+   "axe": "x"
+  },
+  {
+   "nom": "Balcon : meuble barbecue ↔ garde-corps",
+   "x": 790,
+   "z": 240,
+   "axe": "x"
+  },
+  {
+   "nom": "Balcon : jardinières ↔ façade",
+   "x": 760,
+   "z": 365,
+   "axe": "x"
+  }
+ ]
+}

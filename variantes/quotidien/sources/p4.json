@@ -1,0 +1,103 @@
+{
+ "nom": "Le lit qui se lève",
+ "court": "P4 · Le lit qui se lève",
+ "palettes": [
+  "studio",
+  "blanc"
+ ],
+ "nomsPalettes": {
+  "studio": "Terracotta & rose",
+  "blanc": "Murs blancs"
+ },
+ "legende": [
+  [
+   "#ece8e0",
+   "#cfc8bb",
+   "Terrazzo clair"
+  ],
+  [
+   "#2e2f31",
+   "#5a5c5f",
+   "Grès noir 30×60"
+  ],
+  [
+   "#b88a5a",
+   "#6b4a2c",
+   "Point de Hongrie (studio)"
+  ],
+  [
+   "#b9a7a0",
+   "#a69089",
+   "Moquette (dressing)"
+  ],
+  [
+   "#3b82c4",
+   "#1f4f7d",
+   "Portes"
+  ]
+ ],
+ "passages": [
+  {
+   "nom": "Coin repas → cuisine : chaise est ↔ canapé",
+   "x": 450,
+   "z": 410,
+   "axe": "x",
+   "min": 90
+  },
+  {
+   "nom": "Séjour : canapé ↔ mur de la chambre 2 (vers la baie)",
+   "x": 520,
+   "z": 320,
+   "axe": "z"
+  },
+  {
+   "nom": "Séjour : bibliothèque ↔ table basse",
+   "x": 600,
+   "z": 320,
+   "axe": "z"
+  },
+  {
+   "nom": "Cuisine : plan de travail ↔ METOD",
+   "x": 455,
+   "z": 200,
+   "axe": "x",
+   "min": 90
+  },
+  {
+   "nom": "Studio : siège ↔ meuble TV",
+   "x": 640,
+   "z": 581,
+   "axe": "x"
+  },
+  {
+   "nom": "Studio : armoire-lit ↔ siège (jour)",
+   "x": 500,
+   "z": 600,
+   "axe": "x"
+  },
+  {
+   "nom": "Dressing-amis : dressing ↔ BZ",
+   "x": 600,
+   "z": 120,
+   "axe": "x"
+  },
+  {
+   "nom": "Dressing-amis : BRIMNES ↔ porte",
+   "x": 600,
+   "z": 120,
+   "axe": "z"
+  },
+  {
+   "nom": "Balcon : table ↔ façade",
+   "x": 760,
+   "z": 365,
+   "axe": "x"
+  },
+  {
+   "nom": "Balcon : meuble barbecue ↔ garde-corps",
+   "x": 790,
+   "z": 240,
+   "axe": "x"
+  }
+ ]
+}
