@@ -1,0 +1,1007 @@
+{
+ "proposition-1.html": {
+  "erreurs": [],
+  "courant": {
+   "pieces": 49,
+   "meshes": 658,
+   "collisions": [],
+   "zones": [],
+   "passages": [
+    {
+     "nom": "Cuisine : entre plan de travail et METOD",
+     "largeur": 99,
+     "min": 90,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Séjour : devant la porte de la chambre 2",
+     "largeur": 150,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Séjour : devant la porte de la chambre 1",
+     "largeur": 437,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Séjour : vers la baie (côté sud)",
+     "largeur": 166,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Séjour : entre carré et bibliothèque",
+     "largeur": 122,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Entrée : porte → séjour",
+     "largeur": 154,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Entrée : devant WC et SDB",
+     "largeur": 155,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Cabine : le long du lit clos",
+     "largeur": 93,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Cabine : de la porte au lit",
+     "largeur": 290,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Atelier : porte → bureau",
+     "largeur": 126,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "SDB : de la porte au lavabo",
+     "largeur": 150,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Balcon : ch. 2 ↔ séjour",
+     "largeur": 133,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Balcon : séjour ↔ ch. 1",
+     "largeur": 123,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    }
+   ]
+  },
+  "deplie": {
+   "pieces": 49,
+   "meshes": 668,
+   "collisions": [],
+   "zones": [],
+   "passages": [
+    {
+     "nom": "Cuisine : entre plan de travail et METOD",
+     "largeur": 99,
+     "min": 90,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Séjour : devant la porte de la chambre 2",
+     "largeur": 150,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Séjour : devant la porte de la chambre 1",
+     "largeur": 437,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Séjour : vers la baie (côté sud)",
+     "largeur": 102,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Séjour : entre carré et bibliothèque",
+     "largeur": 122,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Entrée : porte → séjour",
+     "largeur": 154,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Entrée : devant WC et SDB",
+     "largeur": 155,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Cabine : le long du lit clos",
+     "largeur": 93,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Cabine : de la porte au lit",
+     "largeur": 290,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Atelier : porte → bureau",
+     "largeur": 126,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "SDB : de la porte au lavabo",
+     "largeur": 150,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Balcon : ch. 2 ↔ séjour",
+     "largeur": 133,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Balcon : séjour ↔ ch. 1",
+     "largeur": 123,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    }
+   ]
+  }
+ },
+ "proposition-2.html": {
+  "erreurs": [],
+  "courant": {
+   "pieces": 41,
+   "meshes": 718,
+   "collisions": [],
+   "zones": [],
+   "passages": [
+    {
+     "nom": "Cuisine : entre plan de travail et METOD",
+     "largeur": 99,
+     "min": 90,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Séjour : entre table et mur de la ch. 2",
+     "largeur": 88,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Séjour : devant la porte de la chambre 1",
+     "largeur": 144,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Séjour : bout de table → baie",
+     "largeur": 130,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Entrée : porte → séjour",
+     "largeur": 151,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Entrée : devant WC et SDB",
+     "largeur": 212,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Ch. 1 : porte → canapé (lit descendu)",
+     "largeur": 129,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Ch. 1 : devant la porte",
+     "largeur": 131,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Ch. 2 : à côté du lit ouvert",
+     "largeur": 274,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "SDB : de la porte au lavabo",
+     "largeur": 145,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Balcon : ch. 2 ↔ séjour",
+     "largeur": 127,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Balcon : séjour ↔ ch. 1",
+     "largeur": 105,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    }
+   ]
+  },
+  "deplie": {
+   "pieces": 40,
+   "meshes": 719,
+   "collisions": [],
+   "zones": [],
+   "passages": [
+    {
+     "nom": "Cuisine : entre plan de travail et METOD",
+     "largeur": 99,
+     "min": 90,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Séjour : entre table et mur de la ch. 2",
+     "largeur": 88,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Séjour : devant la porte de la chambre 1",
+     "largeur": 144,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Séjour : bout de table → baie",
+     "largeur": 130,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Entrée : porte → séjour",
+     "largeur": 151,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Entrée : devant WC et SDB",
+     "largeur": 212,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Ch. 1 : porte → canapé (lit descendu)",
+     "largeur": 99,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Ch. 1 : devant la porte",
+     "largeur": 80,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Ch. 2 : à côté du lit ouvert",
+     "largeur": 95,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "SDB : de la porte au lavabo",
+     "largeur": 145,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Balcon : ch. 2 ↔ séjour",
+     "largeur": 127,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Balcon : séjour ↔ ch. 1",
+     "largeur": 105,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    }
+   ]
+  }
+ },
+ "proposition-3.html": {
+  "erreurs": [],
+  "courant": {
+   "pieces": 44,
+   "meshes": 403,
+   "collisions": [],
+   "zones": [],
+   "passages": [
+    {
+     "nom": "Cuisine : entre plan de travail et METOD",
+     "largeur": 99,
+     "min": 90,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Séjour : devant la porte de la chambre 2",
+     "largeur": 301,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Séjour : devant la porte de la chambre 1",
+     "largeur": 452,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Séjour : entre table et tansu",
+     "largeur": 93,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Engawa : de la marche à la baie (sur l'estrade)",
+     "largeur": 89,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Genkan : porte → séjour",
+     "largeur": 154,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Genkan : devant WC et SDB",
+     "largeur": 155,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Sanctuaire : porte → estrade",
+     "largeur": 80,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Nando : allée centrale",
+     "largeur": 220,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "SDB : de la porte au lavabo",
+     "largeur": 150,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Balcon : ch. 2 ↔ séjour",
+     "largeur": 92,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Balcon : séjour ↔ ch. 1",
+     "largeur": 100,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    }
+   ]
+  },
+  "deplie": {
+   "pieces": 45,
+   "meshes": 408,
+   "collisions": [],
+   "zones": [],
+   "passages": [
+    {
+     "nom": "Cuisine : entre plan de travail et METOD",
+     "largeur": 99,
+     "min": 90,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Séjour : devant la porte de la chambre 2",
+     "largeur": 110,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Séjour : devant la porte de la chambre 1",
+     "largeur": 452,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Séjour : entre table et tansu",
+     "largeur": 93,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Engawa : de la marche à la baie (sur l'estrade)",
+     "largeur": 89,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Genkan : porte → séjour",
+     "largeur": 154,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Genkan : devant WC et SDB",
+     "largeur": 155,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Sanctuaire : porte → estrade",
+     "largeur": 80,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Nando : allée centrale",
+     "largeur": 220,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "SDB : de la porte au lavabo",
+     "largeur": 150,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Balcon : ch. 2 ↔ séjour",
+     "largeur": 92,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Balcon : séjour ↔ ch. 1",
+     "largeur": 100,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    }
+   ]
+  }
+ },
+ "proposition-4.html": {
+  "erreurs": [],
+  "courant": {
+   "pieces": 45,
+   "meshes": 707,
+   "collisions": [],
+   "zones": [],
+   "passages": [
+    {
+     "nom": "Cuisine : entre plan de travail et METOD",
+     "largeur": 99,
+     "min": 90,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Séjour : entrée → séjour (sud du comptoir)",
+     "largeur": 116,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Séjour : devant la porte de la chambre 2",
+     "largeur": 113,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Séjour : devant la porte de la chambre 1",
+     "largeur": 109,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Séjour : entre canapé et bibliothèque",
+     "largeur": 127,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Entrée : porte → séjour",
+     "largeur": 154,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Entrée : devant WC et SDB",
+     "largeur": 155,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Ch. 1 : porte → escalier",
+     "largeur": 86,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Ch. 1 : devant l'escalier",
+     "largeur": 80,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Ch. 2 : porte → bureau",
+     "largeur": 256,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Ch. 2 : devant l'échelle",
+     "largeur": 124,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "SDB : de la porte au lavabo",
+     "largeur": 150,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Balcon : ch. 2 ↔ séjour",
+     "largeur": 123,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Balcon : séjour ↔ ch. 1",
+     "largeur": 128,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    }
+   ]
+  },
+  "deplie": {
+   "pieces": 45,
+   "meshes": 719,
+   "collisions": [],
+   "zones": [],
+   "passages": [
+    {
+     "nom": "Cuisine : entre plan de travail et METOD",
+     "largeur": 99,
+     "min": 90,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Séjour : entrée → séjour (sud du comptoir)",
+     "largeur": 116,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Séjour : devant la porte de la chambre 2",
+     "largeur": 113,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Séjour : devant la porte de la chambre 1",
+     "largeur": 109,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Séjour : entre canapé et bibliothèque",
+     "largeur": 127,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Entrée : porte → séjour",
+     "largeur": 154,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Entrée : devant WC et SDB",
+     "largeur": 155,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Ch. 1 : porte → escalier",
+     "largeur": 86,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Ch. 1 : devant l'escalier",
+     "largeur": 80,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Ch. 2 : porte → bureau",
+     "largeur": 256,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Ch. 2 : devant l'échelle",
+     "largeur": 117,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "SDB : de la porte au lavabo",
+     "largeur": 150,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Balcon : ch. 2 ↔ séjour",
+     "largeur": 123,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Balcon : séjour ↔ ch. 1",
+     "largeur": 90,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    }
+   ]
+  }
+ },
+ "proposition-5.html": {
+  "erreurs": [],
+  "courant": {
+   "pieces": 35,
+   "meshes": 411,
+   "collisions": [],
+   "zones": [],
+   "passages": [
+    {
+     "nom": "Cuisine : entre plan de travail et METOD",
+     "largeur": 99,
+     "min": 90,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Séjour : entre îlot et canapé",
+     "largeur": 89,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Séjour : devant la porte de la chambre 2",
+     "largeur": 127,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Séjour : devant la porte de la chambre 1",
+     "largeur": 449,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Séjour : vers la baie",
+     "largeur": 330,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Entrée : porte → séjour",
+     "largeur": 154,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Entrée : devant WC et SDB",
+     "largeur": 155,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Ch. 1 : porte → lit (côté ouest)",
+     "largeur": 98,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Ch. 1 : côté est du lit",
+     "largeur": 87,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Ch. 2 : porte → lit d'amis",
+     "largeur": 143,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "SDB : de la porte au lavabo",
+     "largeur": 150,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Balcon : ch. 2 ↔ séjour",
+     "largeur": 94,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Balcon : devant la baie",
+     "largeur": 101,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Balcon : séjour ↔ ch. 1",
+     "largeur": 135,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    }
+   ]
+  },
+  "deplie": {
+   "pieces": 31,
+   "meshes": 399,
+   "collisions": [],
+   "zones": [],
+   "passages": [
+    {
+     "nom": "Cuisine : entre plan de travail et METOD",
+     "largeur": 99,
+     "min": 90,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Séjour : entre îlot et canapé",
+     "largeur": 330,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Séjour : devant la porte de la chambre 2",
+     "largeur": 340,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Séjour : devant la porte de la chambre 1",
+     "largeur": 449,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Séjour : vers la baie",
+     "largeur": 330,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Entrée : porte → séjour",
+     "largeur": 154,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Entrée : devant WC et SDB",
+     "largeur": 155,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Ch. 1 : porte → lit (côté ouest)",
+     "largeur": 98,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Ch. 1 : côté est du lit",
+     "largeur": 87,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Ch. 2 : porte → lit d'amis",
+     "largeur": 88,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "SDB : de la porte au lavabo",
+     "largeur": 150,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Balcon : ch. 2 ↔ séjour",
+     "largeur": 94,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Balcon : devant la baie",
+     "largeur": 101,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    },
+    {
+     "nom": "Balcon : séjour ↔ ch. 1",
+     "largeur": 135,
+     "min": 80,
+     "ok": true,
+     "bloque": null
+    }
+   ]
+  }
+ }
+}
