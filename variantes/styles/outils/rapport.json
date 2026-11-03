@@ -1,0 +1,450 @@
+{
+ "proposition-1.html": {
+  "items": 60,
+  "coll": [],
+  "door": [],
+  "pass": [
+   {
+    "n": "Cuisine : plan de travail ↔ METOD",
+    "w": 101,
+    "min": 90,
+    "ok": true
+   },
+   {
+    "n": "Cuisine : bar ↔ METOD",
+    "w": 94,
+    "min": 90,
+    "ok": true
+   },
+   {
+    "n": "Séjour : entrée → séjour (chaise ↔ placard)",
+    "w": 120,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Séjour : accès cuisine depuis le séjour",
+    "w": 417,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Séjour : vers la baie (meuble TV ↔ zafu)",
+    "w": 118,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Séjour : chabudai ↔ meuble TV",
+    "w": 90,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Chambre : côté gauche du lit",
+    "w": 85,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Chambre : côté droit du lit",
+    "w": 85,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Chambre : porte → porte-fenêtre",
+    "w": 83,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Washitsu : oshiire ↔ zabuton",
+    "w": 85,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Washitsu : porte → tatamis",
+    "w": 143,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Genkan : banc ↔ séjour",
+    "w": 359,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Balcon : façade ↔ banc engawa",
+    "w": 101,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Balcon : façade ↔ jardinière",
+    "w": 102,
+    "min": 80,
+    "ok": true
+   }
+  ],
+  "errors": []
+ },
+ "proposition-2.html": {
+  "items": 57,
+  "coll": [],
+  "door": [],
+  "pass": [
+   {
+    "n": "Cuisine : plan de travail ↔ METOD",
+    "w": 101,
+    "min": 90,
+    "ok": true
+   },
+   {
+    "n": "Cuisine : bar ↔ METOD",
+    "w": 94,
+    "min": 90,
+    "ok": true
+   },
+   {
+    "n": "Séjour : entrée → séjour",
+    "w": 231,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Séjour : buffet ↔ table du salon",
+    "w": 95,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Séjour : vers la baie",
+    "w": 293,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Séjour : tabouret ↔ banquette",
+    "w": 296,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Chambre : côté gauche du lit",
+    "w": 92,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Chambre : côté droit du lit",
+    "w": 85,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Chambre : porte → porte-fenêtre",
+    "w": 87,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Bureau : BZ ↔ meuble TV",
+    "w": 143,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Bureau : porte → porte-fenêtre",
+    "w": 189,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Balcon : façade ↔ banquette",
+    "w": 96,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Balcon : façade ↔ olivier",
+    "w": 86,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Balcon : façade ↔ citronnier",
+    "w": 86,
+    "min": 80,
+    "ok": true
+   }
+  ],
+  "errors": []
+ },
+ "proposition-3.html": {
+  "items": 56,
+  "coll": [],
+  "door": [],
+  "pass": [
+   {
+    "n": "Cuisine : plan de travail ↔ METOD",
+    "w": 101,
+    "min": 90,
+    "ok": true
+   },
+   {
+    "n": "Cuisine : bar ↔ METOD",
+    "w": 94,
+    "min": 90,
+    "ok": true
+   },
+   {
+    "n": "Séjour : entrée → séjour",
+    "w": 118,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Séjour : meuble mural ↔ fosse (vers la baie)",
+    "w": 87,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Séjour : accès à la chambre 2",
+    "w": 432,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Séjour : table tulipe ↔ fosse",
+    "w": 141,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Chambre : côté gauche du lit",
+    "w": 93,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Chambre : côté droit du lit",
+    "w": 86,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Chambre : porte → porte-fenêtre",
+    "w": 82,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Den : bureau → porte-fenêtre",
+    "w": 189,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Den : platines ↔ bulle",
+    "w": 124,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Balcon : façade ↔ cactus",
+    "w": 116,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Balcon : façade ↔ table",
+    "w": 92,
+    "min": 80,
+    "ok": true
+   }
+  ],
+  "errors": []
+ },
+ "proposition-4.html": {
+  "items": 54,
+  "coll": [],
+  "door": [],
+  "pass": [
+   {
+    "n": "Cuisine : plan de travail ↔ METOD",
+    "w": 101,
+    "min": 90,
+    "ok": true
+   },
+   {
+    "n": "Cuisine : bar ↔ METOD",
+    "w": 94,
+    "min": 90,
+    "ok": true
+   },
+   {
+    "n": "Séjour : entrée → séjour",
+    "w": 112,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Séjour : derrière le Chesterfield (vers la baie)",
+    "w": 98,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Séjour : malle ↔ meuble TV",
+    "w": 116,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Séjour : fauteuil club ↔ table",
+    "w": 140,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Chambre : côté gauche du lit",
+    "w": 98,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Chambre : côté droit du lit",
+    "w": 85,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Chambre : porte → porte-fenêtre",
+    "w": 83,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Atelier : siège ↔ BZ",
+    "w": 114,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Atelier : rayonnage ↔ siège",
+    "w": 82,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Balcon : barbecue ↔ garde-corps",
+    "w": 88,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Balcon : façade ↔ tablette bar",
+    "w": 147,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Balcon : façade ↔ jardinière",
+    "w": 102,
+    "min": 80,
+    "ok": true
+   }
+  ],
+  "errors": []
+ },
+ "proposition-5.html": {
+  "items": 53,
+  "coll": [],
+  "door": [],
+  "pass": [
+   {
+    "n": "Cuisine : plan de travail ↔ METOD",
+    "w": 101,
+    "min": 90,
+    "ok": true
+   },
+   {
+    "n": "Cuisine : bar ↔ METOD",
+    "w": 94,
+    "min": 90,
+    "ok": true
+   },
+   {
+    "n": "Séjour : entrée → séjour",
+    "w": 113,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Séjour : meuble-bar ↔ table basse (vers la baie)",
+    "w": 96,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Séjour : banquette de brasserie ↔ canapé",
+    "w": 245,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Séjour : devant la chambre 1",
+    "w": 558,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Chambre : côté gauche du lit",
+    "w": 86,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Chambre : côté droit du lit",
+    "w": 86,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Chambre : porte → porte-fenêtre",
+    "w": 82,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Bibliothèque : fauteuil ↔ méridienne",
+    "w": 116,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Bibliothèque : rayonnages ↔ fauteuil",
+    "w": 83,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Balcon : bistrot ↔ garde-corps",
+    "w": 83,
+    "min": 80,
+    "ok": true
+   },
+   {
+    "n": "Balcon : façade ↔ buis",
+    "w": 109,
+    "min": 80,
+    "ok": true
+   }
+  ],
+  "errors": []
+ }
+}
