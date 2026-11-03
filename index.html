@@ -23,6 +23,8 @@ button.on,.tog:has(input:checked){background:var(--ink);color:var(--ink-text);bo
 .sep{width:1px;align-self:stretch;margin:4px 3px;background:var(--border)}
 .lbl{font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--text-secondary);padding:0 6px 0 7px}
 .chip{border-radius:999px;border-color:var(--border)}
+a.chip{display:inline-flex;align-items:center;font-size:13px;line-height:1.2;padding:6px 11px;border:1px solid var(--border);color:var(--text-primary);text-decoration:none;white-space:nowrap}
+a.chip:hover{background:var(--hover)}
 .opts{display:contents}
 .tog{display:inline-flex;align-items:center;gap:6px;font-size:13px;padding:6px 11px;border:1px solid var(--border);border-radius:999px;cursor:pointer;white-space:nowrap}
 .tog input{position:absolute;opacity:0;width:1px;height:1px}
@@ -65,6 +67,7 @@ button.on,.tog:has(input:checked){background:var(--ink);color:var(--ink-text);bo
     <span class="sep"></span>
     <button id="b-furn" class="chip">Meubles</button>
     <label class="tog" for="lab"><input type="checkbox" id="lab">Noms</label>
+    <a class="chip" href="variantes/">30 propositions →</a>
   </div>
   <div class="bar" id="rooms" role="toolbar" aria-label="Pièce">
     <span class="lbl">Pièce</span>

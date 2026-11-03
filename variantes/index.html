@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Propositions d'ameublement</title>
+<style>
+:root{--bg:#f3f2ee;--card:#ffffff;--border:rgba(40,40,30,.14);--fg:#1d1d1b;--muted:#62625b;--ink:#23262b;--ink-text:#ffffff;--hover:rgba(30,30,20,.06);--focus:#3b82c4;--shadow:rgba(30,30,20,.10)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#23231f;--card:#2e2e2a;--border:rgba(255,255,255,.12);--fg:#f1f0ea;--muted:#aaa9a0;--ink:#f1f0ea;--ink-text:#1d1d1b;--hover:rgba(255,255,255,.08);--focus:#7fb2e6;--shadow:rgba(0,0,0,.35);color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#23231f;--card:#2e2e2a;--border:rgba(255,255,255,.12);--fg:#f1f0ea;--muted:#aaa9a0;--ink:#f1f0ea;--ink-text:#1d1d1b;--hover:rgba(255,255,255,.08);--focus:#7fb2e6;--shadow:rgba(0,0,0,.35);color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:15px;line-height:1.5}
+.wrap{max-width:1240px;margin:0 auto;padding-block:28px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 24px;margin-bottom:18px}
+h1{margin:0;font-size:28px;letter-spacing:-.01em;text-wrap:balance}
+.lede{margin:6px 0 0;color:var(--muted);max-width:68ch}
+.back{color:var(--fg);text-decoration:none;border:1px solid var(--border);border-radius:999px;padding:7px 14px;font-size:14px;white-space:nowrap}
+.back:hover{background:var(--hover)}
+.filters{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 22px;position:sticky;top:env(safe-area-inset-top,0px);z-index:3;padding:10px 0;background:var(--bg)}
+.chip{font:inherit;font-size:13px;padding:6px 12px;border-radius:999px;border:1px solid var(--border);background:transparent;color:var(--fg);cursor:pointer}
+.chip b{font-weight:600;color:var(--muted);margin-left:4px;font-variant-numeric:tabular-nums}
+.chip:hover{background:var(--hover)}
+.chip.on{background:var(--ink);color:var(--ink-text);border-color:var(--ink)}
+.chip.on b{color:inherit;opacity:.7}
+button:focus-visible,a:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:18px}
+.card{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden;box-shadow:0 2px 14px var(--shadow);min-width:0}
+.card[hidden]{display:none}
+.thumb{position:relative;display:block;aspect-ratio:16/10;max-width:100%;background:var(--hover);overflow:hidden}
+.thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .25s}
+.thumb .top{opacity:0}
+.thumb:hover .top,.thumb:focus-visible .top{opacity:1}
+.body{display:flex;flex-direction:column;gap:8px;padding:14px 16px 16px;flex:1;min-width:0}
+.eyebrow{margin:0;font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+h2{margin:0;font-size:19px;line-height:1.25;text-wrap:balance}
+.idea{margin:0}
+.plan{margin:0;font-size:13px;color:var(--muted)}
+.plan span{display:block;font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;margin-bottom:2px}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:6px}
+.btn,.ghost{font-size:13px;text-decoration:none;border-radius:8px;padding:7px 12px}
+.btn{background:var(--ink);color:var(--ink-text)}
+.ghost{color:var(--fg);border:1px solid var(--border)}
+.ghost:hover{background:var(--hover)}
+.note{margin:28px 0 0;font-size:13px;color:var(--muted);max-width:75ch}
+@media (max-width:480px){h1{font-size:23px}.grid{grid-template-columns:1fr}.filters{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-16px;padding-inline:16px}.filters::-webkit-scrollbar{display:none}.chip{white-space:nowrap}}
+@media (prefers-reduced-motion:reduce){.thumb img{transition:none}}
+</style></head><body>
+<div class="wrap">
+<header>
+  <div><h1>Propositions d'ameublement</h1>
+  <p class="lede">30 agencements imaginés pour l'appartement T3, par six regards différents. Survolez une image pour voir le plan vu de dessus, ouvrez une proposition pour la parcourir en 3D.</p></div>
+  <a class="back" href="../">← Rendu actuel</a>
+</header>
+<nav class="filters" aria-label="Filtrer par regard"><button class="chip on" data-f="all">Toutes <b>30</b></button><button class="chip" data-f="architecte">L'architecte d'intérieur <b>5</b></button><button class="chip" data-f="petits-espaces">Le spécialiste des petits espaces <b>5</b></button><button class="chip" data-f="styles">Le décorateur aux styles marqués <b>5</b></button><button class="chip" data-f="quotidien">Le designer du quotidien <b>5</b></button><button class="chip" data-f="exterieur">Le dedans-dehors <b>5</b></button><button class="chip" data-f="carte-blanche">Carte blanche <b>5</b></button></nav>
+<main class="grid">
+<article class="card" data-r="architecte">
+  <a class="thumb" href="architecte/proposition-1.html" aria-label="Ouvrir La salle commune en 3D">
+    <img src="architecte/captures/p1-perspective.png" alt="Perspective de la proposition La salle commune" loading="lazy">
+    <img class="top" src="architecte/captures/p1-dessus.png" alt="" loading="lazy">
+  </a>
+  <div class="body">
+    <p class="eyebrow">L'architecte d'intérieur · n° 1</p>
+    <h2>La salle commune</h2>
+    <p class="idea">Le séjour redevient une salle commune à l'ancienne : une grande table d'hôte en chêne, qui sert aux repas, au travail, aux jeux et à l'apéro, un buffet et une bibliothèque, sans canapé ni télé.</p>
+    <p class="plan"><span>Pièces</span>Séjour = cuisine + salle commune. Ch. 1 = chambre. Ch. 2 = cocon TV-jeux-amis. Placard du couloir = dressing. Balcon = potager et café du matin.</p>
+    <div class="links"><a class="btn" href="architecte/proposition-1.html">Ouvrir en 3D</a><a class="ghost" href="https://github.com/yoperiquoi/appart-t3/blob/main/variantes/architecte/README.md">Fiche détaillée</a></div>
+  </div>
+</article>
+<article class="card" data-r="architecte">
+  <a class="thumb" href="architecte/proposition-2.html" aria-label="Ouvrir La bibliothèque traversante en 3D">
+    <img src="architecte/captures/p2-perspective.png" alt="Perspective de la proposition La bibliothèque traversante" loading="lazy">
+    <img class="top" src="architecte/captures/p2-dessus.png" alt="" loading="lazy">
+  </a>
+  <div class="body">
+    <p class="eyebrow">L'architecte d'intérieur · n° 2</p>
+    <h2>La bibliothèque traversante</h2>
+    <p class="idea">Un meuble double face de 1,60 m, posé dans l'alignement du mur de la cuisine, coupe le séjour en deux vraies pièces : une salle à manger côté cuisine et entrée, et un salon côté baie. Son socle est fait des deux METOD existants, avec la vaisselle côté repas.</p>
+    <p class="plan"><span>Pièces</span>Séjour = salle à manger (ouest) + salon (est). Ch. 1 = chambre « hôtel ». Ch. 2 = bureau le jour, chambre d'amis le soir (lit escamotable). Balcon = salon d'extérieur.</p>
+    <div class="links"><a class="btn" href="architecte/proposition-2.html">Ouvrir en 3D</a><a class="ghost" href="https://github.com/yoperiquoi/appart-t3/blob/main/variantes/architecte/README.md">Fiche détaillée</a></div>
+  </div>
+</article>
+<article class="card" data-r="architecte">
+  <a class="thumb" href="architecte/proposition-3.html" aria-label="Ouvrir Les chambres inversées en 3D">
+    <img src="architecte/captures/p3-perspective.png" alt="Perspective de la proposition Les chambres inversées" loading="lazy">
+    <img class="top" src="architecte/captures/p3-dessus.png" alt="" loading="lazy">
+  </a>
+  <div class="body">
+    <p class="eyebrow">L'architecte d'intérieur · n° 3</p>
+    <h2>Les chambres inversées</h2>
+    <p class="idea">On dort dans la petite chambre, transformée en cabine boisée : une tête de lit habitée du sol au plafond (niches-chevets, appliques, placards hauts), un ciel de lit, des murs foncés, un sol en jonc.</p>
+    <p class="plan"><span>Pièces</span>Séjour = salon-banquette face à la TV + coin repas. Ch. 2 = chambre-cabine. Ch. 1 = atelier (bureau, BZ, dressing en étagères, BRIMNES). Placard du couloir = vêtements, avec un aménagement intérieur à prévoir. Balcon = table du matin et fauteuil suspendu.</p>
+    <div class="links"><a class="btn" href="architecte/proposition-3.html">Ouvrir en 3D</a><a class="ghost" href="https://github.com/yoperiquoi/appart-t3/blob/main/variantes/architecte/README.md">Fiche détaillée</a></div>
+  </div>
+</article>
+<article class="card" data-r="architecte">
+  <a class="thumb" href="architecte/proposition-4.html" aria-label="Ouvrir L'îlot-table en 3D">
+    <img src="architecte/captures/p4-perspective.png" alt="Perspective de la proposition L'îlot-table" loading="lazy">
+    <img class="top" src="architecte/captures/p4-dessus.png" alt="" loading="lazy">
+  </a>
+  <div class="body">
+    <p class="eyebrow">L'architecte d'intérieur · n° 4</p>
+    <h2>L'îlot-table</h2>
+    <p class="idea">Au lieu de poser une table au milieu du séjour, on la prolonge dans l'axe du bar. Cuisine, comptoir et table forment une seule épine de 2,85 m, avec 4 places à table (une banquette de 2 places contre le mur de l'entrée et 2 chaises) et 2 tabourets au bar.</p>
+    <p class="plan"><span>Pièces</span>Séjour = épine cuisine-table (ouest) + salon en L (est). Ch. 1 = chambre avec un secrétaire. Ch. 2 = bureau + BZ. Balcon = salon d'angle et barbecue.</p>
+    <div class="links"><a class="btn" href="architecte/proposition-4.html">Ouvrir en 3D</a><a class="ghost" href="https://github.com/yoperiquoi/appart-t3/blob/main/variantes/architecte/README.md">Fiche détaillée</a></div>
+  </div>
+</article>
+<article class="card" data-r="architecte">
+  <a class="thumb" href="architecte/proposition-5.html" aria-label="Ouvrir Face au paysage en 3D">
+    <img src="architecte/captures/p5-perspective.png" alt="Perspective de la proposition Face au paysage" loading="lazy">
+    <img class="top" src="architecte/captures/p5-dessus.png" alt="" loading="lazy">
+  </a>
+  <div class="body">
+    <p class="eyebrow">L'architecte d'intérieur · n° 5</p>
+    <h2>Face au paysage</h2>
+    <p class="idea">Le canapé tourne le dos à la cuisine et regarde la baie et le balcon. Le soir, une toile de projection motorisée descend devant la baie, et la fenêtre devient l'écran : un vidéoprojecteur au plafond, à 2,40 m de recul, donne environ 2 m de base d'image.</p>
+    <p class="plan"><span>Pièces</span>Séjour = salon face à la baie + table ronde côté cuisine + fauteuil de lecture dans la niche. Ch. 1 = chambre avec un mur de placards. Ch. 2 = bureau intégré + BZ + BRIMNES. Balcon = long banc-coffre.</p>
+    <div class="links"><a class="btn" href="architecte/proposition-5.html">Ouvrir en 3D</a><a class="ghost" href="https://github.com/yoperiquoi/appart-t3/blob/main/variantes/architecte/README.md">Fiche détaillée</a></div>
+  </div>
+</article>
+<article class="card" data-r="petits-espaces">
+  <a class="thumb" href="petits-espaces/proposition-1.html" aria-label="Ouvrir La cabine en 3D">
+    <img src="petits-espaces/captures/p1-perspective.png" alt="Perspective de la proposition La cabine" loading="lazy">
+    <img class="top" src="petits-espaces/captures/p1-dessus.png" alt="" loading="lazy">
+  </a>
+  <div class="body">
+    <p class="eyebrow">Le spécialiste des petits espaces · n° 1</p>
+    <h2>La cabine</h2>
+    <p class="idea">On dort dans la plus petite chambre, dans un lit clos de bateau : une boîte en chêne de 1,71 × 2,08 m, couchette sur 3 tiroirs de 1,60 m, cloison à hublot, rideau, coffres « de pont » au-dessus.</p>
+    <p class="plan"><span>Pièces</span>Ch. 2 = la cabine (sommeil) · Ch. 1 = l'atelier (bureau, gaming, dressing, lit d'amis) · Séjour = le carré (repas, salon, TV) · Entrée = coffre de marin · Balcon = le pont.</p>
+    <div class="links"><a class="btn" href="petits-espaces/proposition-1.html">Ouvrir en 3D</a><a class="ghost" href="https://github.com/yoperiquoi/appart-t3/blob/main/variantes/petits-espaces/README.md">Fiche détaillée</a></div>
+  </div>
+</article>
+<article class="card" data-r="petits-espaces">
+  <a class="thumb" href="petits-espaces/proposition-2.html" aria-label="Ouvrir Jour / Nuit en 3D">
+    <img src="petits-espaces/captures/p2-perspective.png" alt="Perspective de la proposition Jour / Nuit" loading="lazy">
+    <img class="top" src="petits-espaces/captures/p2-dessus.png" alt="" loading="lazy">
+  </a>
+  <div class="body">
+    <p class="eyebrow">Le spécialiste des petits espaces · n° 2</p>
+    <h2>Jour / Nuit</h2>
+    <p class="idea">Les deux lits disparaissent le jour : en ch. 1 un lit plafond motorisé 160 × 200 remonte à 2,08 m (on passe dessous debout), en ch. 2 un lit escamotable 140 se replie dans une armoire. La ch.</p>
+    <p class="plan"><span>Pièces</span>Séjour = la grande table (repas, jeux, télétravail) + bibliothèque + coin lecture · Ch. 1 = salon le jour, chambre la nuit · Ch. 2 = bureau le jour, chambre d'amis la nuit · Entrée, SDB, balcon : rangements en hauteur, potager vertical.</p>
+    <div class="links"><a class="btn" href="petits-espaces/proposition-2.html">Ouvrir en 3D</a><a class="ghost" href="https://github.com/yoperiquoi/appart-t3/blob/main/variantes/petits-espaces/README.md">Fiche détaillée</a></div>
+  </div>
+</article>
+<article class="card" data-r="petits-espaces">
+  <a class="thumb" href="petits-espaces/proposition-3.html" aria-label="Ouvrir Engawa en 3D">
+    <img src="petits-espaces/captures/p3-perspective.png" alt="Perspective de la proposition Engawa" loading="lazy">
+    <img class="top" src="petits-espaces/captures/p3-dessus.png" alt="" loading="lazy">
+  </a>
+  <div class="body">
+    <p class="eyebrow">Le spécialiste des petits espaces · n° 3</p>
+    <h2>Engawa</h2>
+    <p class="idea">Une estrade de 30 cm en hinoki le long de la baie, comme la galerie (engawa) d'une maison japonaise : on s'y assoit au bord, on y vit au ras du sol face au balcon, et elle cache dessous un vrai lit d'amis 140 × 190 qui sort en 10 secondes.</p>
+    <p class="plan"><span>Pièces</span>Séjour = salon sur estrade + repas à la table ronde + lit d'amis caché · Ch. 1 = sommeil et méditation · Ch. 2 = dressing, bureau, buanderie · Entrée = genkan (on se déchausse sur les galets) · Balcon = jardin sec et bambous.</p>
+    <div class="links"><a class="btn" href="petits-espaces/proposition-3.html">Ouvrir en 3D</a><a class="ghost" href="https://github.com/yoperiquoi/appart-t3/blob/main/variantes/petits-espaces/README.md">Fiche détaillée</a></div>
+  </div>
+</article>
+<article class="card" data-r="petits-espaces">
+  <a class="thumb" href="petits-espaces/proposition-4.html" aria-label="Ouvrir Les hauteurs en 3D">
+    <img src="petits-espaces/captures/p4-perspective.png" alt="Perspective de la proposition Les hauteurs" loading="lazy">
+    <img class="top" src="petits-espaces/captures/p4-dessus.png" alt="" loading="lazy">
+  </a>
+  <div class="body">
+    <p class="eyebrow">Le spécialiste des petits espaces · n° 4</p>
+    <h2>Les hauteurs</h2>
+    <p class="idea">Tout ce qui est au-dessus de 1 m travaille. Le lit 160 × 200 monte sur une plateforme de 1,05 m qui contient 12 grands tiroirs : c'est l'armoire (3,4 m³, plus que le dressing + le BRIMNES réunis), on y monte par un escalier-coffre japonais (kaidan dansu) dont…</p>
+    <p class="plan"><span>Pièces</span>Ch. 1 = chambre perchée + coin sport (espalier) + lecture · Ch. 2 = bureau sous mezzanine d'amis · Séjour = salon + comptoir-repas · Entrée = vélo au mur, placards en pont · Balcon = jardin vertical et fauteuil suspendu.</p>
+    <div class="links"><a class="btn" href="petits-espaces/proposition-4.html">Ouvrir en 3D</a><a class="ghost" href="https://github.com/yoperiquoi/appart-t3/blob/main/variantes/petits-espaces/README.md">Fiche détaillée</a></div>
+  </div>
+</article>
+<article class="card" data-r="petits-espaces">
+  <a class="thumb" href="petits-espaces/proposition-5.html" aria-label="Ouvrir Tetris en 3D">
+    <img src="petits-espaces/captures/p5-perspective.png" alt="Perspective de la proposition Tetris" loading="lazy">
+    <img class="top" src="petits-espaces/captures/p5-dessus.png" alt="" loading="lazy">
+  </a>
+  <div class="body">
+    <p class="eyebrow">Le spécialiste des petits espaces · n° 5</p>
+    <h2>Tetris</h2>
+    <p class="idea">Rien n'est fixé : quatre modules-coffres identiques sur roulettes (75 × 100 cm) font un canapé avec chaise longue le jour, et roulés dans la ch.</p>
+    <p class="plan"><span>Pièces</span>Séjour = salon modulable + îlot-repas · Ch. 1 = chambre (le lit existant, dressing, portant du lendemain) · Ch. 2 = pièce caméléon (bureau le jour, chambre d'amis à la demande) · Entrée, SDB, balcon : dessertes et jardinières à roulettes.</p>
+    <div class="links"><a class="btn" href="petits-espaces/proposition-5.html">Ouvrir en 3D</a><a class="ghost" href="https://github.com/yoperiquoi/appart-t3/blob/main/variantes/petits-espaces/README.md">Fiche détaillée</a></div>
+  </div>
+</article>
+<article class="card" data-r="styles">
+  <a class="thumb" href="styles/proposition-1.html" aria-label="Ouvrir Ryokan (japandi d'auberge) en 3D">
+    <img src="styles/captures/p1-perspective.jpg" alt="Perspective de la proposition Ryokan (japandi d'auberge)" loading="lazy">
+    <img class="top" src="styles/captures/p1-dessus.jpg" alt="" loading="lazy">
+  </a>
+  <div class="body">
+    <p class="eyebrow">Le décorateur aux styles marqués · n° 1</p>
+    <h2>Ryokan (japandi d'auberge)</h2>
+    <p class="idea">L'appartement se vit comme un ryokan : on se déchausse dans un genkan sombre, on passe un noren indigo, puis la lumière s'ouvre sur un séjour pâle et un balcon devenu jardin de gravier ratissé.</p>
+    <p class="plan"><span>Pièces</span>Séjour : repas côté bar, salon côté baie</p>
+    <div class="links"><a class="btn" href="styles/proposition-1.html">Ouvrir en 3D</a><a class="ghost" href="https://github.com/yoperiquoi/appart-t3/blob/main/variantes/styles/README.md">Fiche détaillée</a></div>
+  </div>
+</article>
+<article class="card" data-r="styles">
+  <a class="thumb" href="styles/proposition-2.html" aria-label="Ouvrir Riad (méditerranéen marocain) en 3D">
+    <img src="styles/captures/p2-perspective.jpg" alt="Perspective de la proposition Riad (méditerranéen marocain)" loading="lazy">
+    <img class="top" src="styles/captures/p2-dessus.jpg" alt="" loading="lazy">
+  </a>
+  <div class="body">
+    <p class="eyebrow">Le décorateur aux styles marqués · n° 2</p>
+    <h2>Riad (méditerranéen marocain)</h2>
+    <p class="idea">Le séjour n'a plus ni canapé ni table à manger. Une banquette maçonnée en L (enduite à la chaux façon tadelakt, coussins safran et terre) entoure une grande table ronde de laiton et de zellige : on y dîne à huit, on y fait la sieste, on y reçoit.</p>
+    <p class="plan"><span>Pièces</span>Séjour : salon marocain, repas et détente au même endroit</p>
+    <div class="links"><a class="btn" href="styles/proposition-2.html">Ouvrir en 3D</a><a class="ghost" href="https://github.com/yoperiquoi/appart-t3/blob/main/variantes/styles/README.md">Fiche détaillée</a></div>
+  </div>
+</article>
+<article class="card" data-r="styles">
+  <a class="thumb" href="styles/proposition-3.html" aria-label="Ouvrir Groove 72 (années 70) en 3D">
+    <img src="styles/captures/p3-perspective.jpg" alt="Perspective de la proposition Groove 72 (années 70)" loading="lazy">
+    <img class="top" src="styles/captures/p3-dessus.jpg" alt="" loading="lazy">
+  </a>
+  <div class="body">
+    <p class="eyebrow">Le décorateur aux styles marqués · n° 3</p>
+    <h2>Groove 72 (années 70)</h2>
+    <p class="idea">La cuisine chêne et ardoise existante est déjà très seventies : on assume et on pousse le curseur. Au centre du séjour, une fosse de conversation sans creuser : trois banquettes basses en U (type Ligne Roset Togo, velours côtelé rouille) entourent un tapis…</p>
+    <p class="plan"><span>Pièces</span>Séjour : fosse de conversation et repas côté bar</p>
+    <div class="links"><a class="btn" href="styles/proposition-3.html">Ouvrir en 3D</a><a class="ghost" href="https://github.com/yoperiquoi/appart-t3/blob/main/variantes/styles/README.md">Fiche détaillée</a></div>
+  </div>
+</article>
+<article class="card" data-r="styles">
+  <a class="thumb" href="styles/proposition-4.html" aria-label="Ouvrir Atelier (industriel chaleureux) en 3D">
+    <img src="styles/captures/p4-perspective.jpg" alt="Perspective de la proposition Atelier (industriel chaleureux)" loading="lazy">
+    <img class="top" src="styles/captures/p4-dessus.jpg" alt="" loading="lazy">
+  </a>
+  <div class="body">
+    <p class="eyebrow">Le décorateur aux styles marqués · n° 4</p>
+    <h2>Atelier (industriel chaleureux)</h2>
+    <p class="idea">On traite l'appartement comme un ancien atelier converti : - béton grand format au sol ; - un vrai mur de briquettes de parement derrière la TV ; - acier noir pour les placards (façades « verrière » à petits bois), les étagères et un lit à baldaquin ; - cuir cognac et kilims délavés pour réchauffer.</p>
+    <p class="plan"><span>Pièces</span>Séjour : salon TV et repas sur table d'atelier</p>
+    <div class="links"><a class="btn" href="styles/proposition-4.html">Ouvrir en 3D</a><a class="ghost" href="https://github.com/yoperiquoi/appart-t3/blob/main/variantes/styles/README.md">Fiche détaillée</a></div>
+  </div>
+</article>
+<article class="card" data-r="styles">
+  <a class="thumb" href="styles/proposition-5.html" aria-label="Ouvrir Paquebot (Art déco) en 3D">
+    <img src="styles/captures/p5-perspective.jpg" alt="Perspective de la proposition Paquebot (Art déco)" loading="lazy">
+    <img class="top" src="styles/captures/p5-dessus.jpg" alt="" loading="lazy">
+  </a>
+  <div class="body">
+    <p class="eyebrow">Le décorateur aux styles marqués · n° 5</p>
+    <h2>Paquebot (Art déco)</h2>
+    <p class="idea">Un salon de transatlantique des années 30 : - damier de marbre noir et blanc posé à 45° qui fait fuir les murs ; - au centre, un canapé en arc de cercle en velours vieux rose sur un tapis rond ; - un meuble-bar laqué noir aux éventails de laiton qui cache la TV.</p>
+    <p class="plan"><span>Pièces</span>Séjour : salon-paquebot, bar et brasserie</p>
+    <div class="links"><a class="btn" href="styles/proposition-5.html">Ouvrir en 3D</a><a class="ghost" href="https://github.com/yoperiquoi/appart-t3/blob/main/variantes/styles/README.md">Fiche détaillée</a></div>
+  </div>
+</article>
+<article class="card" data-r="quotidien">
+  <a class="thumb" href="quotidien/proposition-1.html" aria-label="Ouvrir La table au centre, les écrans à part en 3D">
+    <img src="quotidien/captures/p1-perspective.png" alt="Perspective de la proposition La table au centre, les écrans à part" loading="lazy">
+    <img class="top" src="quotidien/captures/p1-dessus.png" alt="" loading="lazy">
+  </a>
+  <div class="body">
+    <p class="eyebrow">Le designer du quotidien · n° 1</p>
+    <h2>La table au centre, les écrans à part</h2>
+    <p class="idea">Le séjour n'a plus de canapé. Il devient une salle commune autour d'une table de 2,20 m, où l'on cuisine, mange, télétravaille et reçoit. Télé, console et PC ont leur pièce fermée (l'ancienne chambre 2).</p>
+    <p class="plan"><span>Pièces</span>Séjour : salle commune</p>
+    <div class="links"><a class="btn" href="quotidien/proposition-1.html">Ouvrir en 3D</a><a class="ghost" href="https://github.com/yoperiquoi/appart-t3/blob/main/variantes/quotidien/README.md">Fiche détaillée</a></div>
+  </div>
+</article>
+<article class="card" data-r="quotidien">
+  <a class="thumb" href="quotidien/proposition-2.html" aria-label="Ouvrir Le circuit du matin et du linge en 3D">
+    <img src="quotidien/captures/p2-perspective.png" alt="Perspective de la proposition Le circuit du matin et du linge" loading="lazy">
+    <img class="top" src="quotidien/captures/p2-dessus.png" alt="" loading="lazy">
+  </a>
+  <div class="body">
+    <p class="eyebrow">Le designer du quotidien · n° 2</p>
+    <h2>Le circuit du matin et du linge</h2>
+    <p class="idea">Le dressing existant (2,00 × 0,50 m) entre exactement dans le nouveau placard du couloir (2,00 × 0,60 m). Ce placard est à 50 cm de la porte de la SDB et de celle de la chambre : on sort de la douche, on s'habille, on part.</p>
+    <p class="plan"><span>Pièces</span>Séjour : salon, avec un coin repas près de la cuisine</p>
+    <div class="links"><a class="btn" href="quotidien/proposition-2.html">Ouvrir en 3D</a><a class="ghost" href="https://github.com/yoperiquoi/appart-t3/blob/main/variantes/quotidien/README.md">Fiche détaillée</a></div>
+  </div>
+</article>
+<article class="card" data-r="quotidien">
+  <a class="thumb" href="quotidien/proposition-3.html" aria-label="Ouvrir L'arrière-cuisine en 3D">
+    <img src="quotidien/captures/p3-perspective.png" alt="Perspective de la proposition L'arrière-cuisine" loading="lazy">
+    <img class="top" src="quotidien/captures/p3-dessus.png" alt="" loading="lazy">
+  </a>
+  <div class="body">
+    <p class="eyebrow">Le designer du quotidien · n° 3</p>
+    <h2>L'arrière-cuisine</h2>
+    <p class="idea">La chambre 2, collée à la cuisine, devient la « pièce qui travaille » : garde-manger (la BRIMNES et une étagère de réserves), tri en 4 bacs, colonne ménage (aspirateur balai en charge, seau, outils), panneau à outils, et un bureau-établi sous la fenêtre.</p>
+    <p class="plan"><span>Pièces</span>Séjour : salon</p>
+    <div class="links"><a class="btn" href="quotidien/proposition-3.html">Ouvrir en 3D</a><a class="ghost" href="https://github.com/yoperiquoi/appart-t3/blob/main/variantes/quotidien/README.md">Fiche détaillée</a></div>
+  </div>
+</article>
+<article class="card" data-r="quotidien">
+  <a class="thumb" href="quotidien/proposition-4.html" aria-label="Ouvrir Le lit qui se lève en 3D">
+    <img src="quotidien/captures/p4-perspective.png" alt="Perspective de la proposition Le lit qui se lève" loading="lazy">
+    <img class="top" src="quotidien/captures/p4-dessus.png" alt="" loading="lazy">
+  </a>
+  <div class="body">
+    <p class="eyebrow">Le designer du quotidien · n° 4</p>
+    <h2>Le lit qui se lève</h2>
+    <p class="idea">La chambre 1 devient un studio : une armoire-lit 160 × 200 contre le mur de la SDB libère toute la pièce le jour. On y trouve le bureau 180, le siège gaming, la TV face au lit et un tapis de yoga.</p>
+    <p class="plan"><span>Pièces</span>Chambre 1 : studio (bureau le jour, chambre la nuit)</p>
+    <div class="links"><a class="btn" href="quotidien/proposition-4.html">Ouvrir en 3D</a><a class="ghost" href="https://github.com/yoperiquoi/appart-t3/blob/main/variantes/quotidien/README.md">Fiche détaillée</a></div>
+  </div>
+</article>
+<article class="card" data-r="quotidien">
+  <a class="thumb" href="quotidien/proposition-5.html" aria-label="Ouvrir La salle à manger fermée en 3D">
+    <img src="quotidien/captures/p5-perspective.png" alt="Perspective de la proposition La salle à manger fermée" loading="lazy">
+    <img class="top" src="quotidien/captures/p5-dessus.png" alt="" loading="lazy">
+  </a>
+  <div class="body">
+    <p class="eyebrow">Le designer du quotidien · n° 5</p>
+    <h2>La salle à manger fermée</h2>
+    <p class="idea">La chambre 2 a sa porte à un mètre de la cuisine et une porte-fenêtre sur le balcon : elle devient une salle à manger fermée de 6 places.</p>
+    <p class="plan"><span>Pièces</span>Chambre 2 : salle à manger</p>
+    <div class="links"><a class="btn" href="quotidien/proposition-5.html">Ouvrir en 3D</a><a class="ghost" href="https://github.com/yoperiquoi/appart-t3/blob/main/variantes/quotidien/README.md">Fiche détaillée</a></div>
+  </div>
+</article>
+<article class="card" data-r="exterieur">
+  <a class="thumb" href="exterieur/proposition-1.html" aria-label="Ouvrir L'Orangerie en 3D">
+    <img src="exterieur/captures/proposition-1-perspective.jpg" alt="Perspective de la proposition L'Orangerie" loading="lazy">
+    <img class="top" src="exterieur/captures/proposition-1-dessus.jpg" alt="" loading="lazy">
+  </a>
+  <div class="body">
+    <p class="eyebrow">Le dedans-dehors · n° 1</p>
+    <h2>L'Orangerie</h2>
+    <p class="idea">Les 1,30 m de séjour le long de la baie passent en tomettes hexagonales terre cuite, les mêmes que sur le balcon. Le vitrage disparaît visuellement, et cette bande sert aussi à l'hivernage : l'olivier et les agrumes, qui craignent le gel mais aussi la chaleur…</p>
+    <p class="plan"><span>Pièces</span>séjour tourné vers la baie, table dans l'orangerie, ch. 2 bureau-serre</p>
+    <div class="links"><a class="btn" href="exterieur/proposition-1.html">Ouvrir en 3D</a><a class="ghost" href="https://github.com/yoperiquoi/appart-t3/blob/main/variantes/exterieur/README.md">Fiche détaillée</a></div>
+  </div>
+</article>
+<article class="card" data-r="exterieur">
+  <a class="thumb" href="exterieur/proposition-2.html" aria-label="Ouvrir La Tablée d'été en 3D">
+    <img src="exterieur/captures/proposition-2-perspective.jpg" alt="Perspective de la proposition La Tablée d'été" loading="lazy">
+    <img class="top" src="exterieur/captures/proposition-2-dessus.jpg" alt="" loading="lazy">
+  </a>
+  <div class="body">
+    <p class="eyebrow">Le dedans-dehors · n° 2</p>
+    <h2>La Tablée d'été</h2>
+    <p class="idea">On renonce au salon classique : le séjour devient une salle à manger de 8 places autour d'une table de ferme de 2,40 m. Le petit salon (BZ, TV, PC) passe dans la ch. 2, qui est la pièce la plus proche du bar.</p>
+    <p class="plan"><span>Pièces</span>séjour = table de 2,40 m ; ch. 2 = petit salon TV-bureau</p>
+    <div class="links"><a class="btn" href="exterieur/proposition-2.html">Ouvrir en 3D</a><a class="ghost" href="https://github.com/yoperiquoi/appart-t3/blob/main/variantes/exterieur/README.md">Fiche détaillée</a></div>
+  </div>
+</article>
+<article class="card" data-r="exterieur">
+  <a class="thumb" href="exterieur/proposition-3.html" aria-label="Ouvrir Le Bureau d'été en 3D">
+    <img src="exterieur/captures/proposition-3-perspective.jpg" alt="Perspective de la proposition Le Bureau d'été" loading="lazy">
+    <img class="top" src="exterieur/captures/proposition-3-dessus.jpg" alt="" loading="lazy">
+  </a>
+  <div class="body">
+    <p class="eyebrow">Le dedans-dehors · n° 3</p>
+    <h2>Le Bureau d'été</h2>
+    <p class="idea">Dans ce T3, la chambre parentale n'a pas besoin de la plus grande des chambres : on y dort, et un lit 160 tient dans la ch. 2 en regardant la porte-fenêtre. La ch.</p>
+    <p class="plan"><span>Pièces</span>ch. 2 = chambre, ch. 1 = bureau + amis + dressing, deux canapés en vis-à-vis</p>
+    <div class="links"><a class="btn" href="exterieur/proposition-3.html">Ouvrir en 3D</a><a class="ghost" href="https://github.com/yoperiquoi/appart-t3/blob/main/variantes/exterieur/README.md">Fiche détaillée</a></div>
+  </div>
+</article>
+<article class="card" data-r="exterieur">
+  <a class="thumb" href="exterieur/proposition-4.html" aria-label="Ouvrir L'Engawa en 3D">
+    <img src="exterieur/captures/proposition-4-perspective.jpg" alt="Perspective de la proposition L'Engawa" loading="lazy">
+    <img class="top" src="exterieur/captures/proposition-4-dessus.jpg" alt="" loading="lazy">
+  </a>
+  <div class="body">
+    <p class="eyebrow">Le dedans-dehors · n° 4</p>
+    <h2>L'Engawa</h2>
+    <p class="idea">Au Japon, l'engawa est la galerie de bois entre la maison et le jardin, assez haute pour s'y asseoir. Un banc continu de 40 cm de profondeur et 42 cm de haut court le long de la façade, découpé par les ouvertures.</p>
+    <p class="plan"><span>Pièces</span>séjour avec assise au sol, ch. 2 = pièce à tatamis, entrée en genkan</p>
+    <div class="links"><a class="btn" href="exterieur/proposition-4.html">Ouvrir en 3D</a><a class="ghost" href="https://github.com/yoperiquoi/appart-t3/blob/main/variantes/exterieur/README.md">Fiche détaillée</a></div>
+  </div>
+</article>
+<article class="card" data-r="exterieur">
+  <a class="thumb" href="exterieur/proposition-5.html" aria-label="Ouvrir Le Potager perché en 3D">
+    <img src="exterieur/captures/proposition-5-perspective.jpg" alt="Perspective de la proposition Le Potager perché" loading="lazy">
+    <img class="top" src="exterieur/captures/proposition-5-dessus.jpg" alt="" loading="lazy">
+  </a>
+  <div class="body">
+    <p class="eyebrow">Le dedans-dehors · n° 5</p>
+    <h2>Le Potager perché</h2>
+    <p class="idea">Le balcon devient un potager de 9 m linéaires : 5 bacs sur pieds alignés le long du garde-corps (hauteur de travail 80 cm, sans se baisser), une allée de 80 cm côté façade qui dessert les trois ouvertures, des espaliers (poirier, vigne) sur les trumeaux de façade.</p>
+    <p class="plan"><span>Pièces</span>ch. 2 = atelier-serre, BZ en canapé, table de récolte devant la baie</p>
+    <div class="links"><a class="btn" href="exterieur/proposition-5.html">Ouvrir en 3D</a><a class="ghost" href="https://github.com/yoperiquoi/appart-t3/blob/main/variantes/exterieur/README.md">Fiche détaillée</a></div>
+  </div>
+</article>
+<article class="card" data-r="carte-blanche">
+  <a class="thumb" href="carte-blanche/proposition-1.html" aria-label="Ouvrir Les cabanes en 3D">
+    <img src="carte-blanche/captures/p1-perspective.jpg" alt="Perspective de la proposition Les cabanes" loading="lazy">
+    <img class="top" src="carte-blanche/captures/p1-dessus.jpg" alt="" loading="lazy">
+  </a>
+  <div class="body">
+    <p class="eyebrow">Carte blanche · n° 1</p>
+    <h2>Les cabanes</h2>
+    <p class="idea">On se sent mieux dans une niche que dans une pièce ouverte : un lit clos breton, en chêne, avec des volets coulissants, transforme la chambre 1 en deux espaces (la boîte pour dormir, le reste en salon du matin), et le même principe s'applique au séjour, au bureau, à l'entrée et au balcon.</p>
+    <p class="plan"><span>Pièces</span>Séjour : salon dans une alcôve, coin repas en banquette. Chambre 1 : lit clos et salon du matin. Chambre 2 : bureau-cabane et chambre d'amis. Balcon : coin repas sous tonnelle.</p>
+    <div class="links"><a class="btn" href="carte-blanche/proposition-1.html">Ouvrir en 3D</a><a class="ghost" href="https://github.com/yoperiquoi/appart-t3/blob/main/variantes/carte-blanche/README.md">Fiche détaillée</a></div>
+  </div>
+</article>
+<article class="card" data-r="carte-blanche">
+  <a class="thumb" href="carte-blanche/proposition-2.html" aria-label="Ouvrir La salle à manger fermée en 3D">
+    <img src="carte-blanche/captures/p2-perspective.jpg" alt="Perspective de la proposition La salle à manger fermée" loading="lazy">
+    <img class="top" src="carte-blanche/captures/p2-dessus.jpg" alt="" loading="lazy">
+  </a>
+  <div class="body">
+    <p class="eyebrow">Carte blanche · n° 2</p>
+    <h2>La salle à manger fermée</h2>
+    <p class="idea">La porte de la chambre 2 est juste à côté de l'entrée de la cuisine : c'est la place naturelle d'une vraie salle à manger fermée, entourée de livres, avec une porte-fenêtre pour dîner dehors l'été.</p>
+    <p class="plan"><span>Pièces</span>Chambre 2 : salle à manger-bibliothèque (6 places). Séjour : salon et atelier (bureau). Chambre 1 : chambre. Balcon : bistrot côté salle à manger et bains de soleil côté chambre.</p>
+    <div class="links"><a class="btn" href="carte-blanche/proposition-2.html">Ouvrir en 3D</a><a class="ghost" href="https://github.com/yoperiquoi/appart-t3/blob/main/variantes/carte-blanche/README.md">Fiche détaillée</a></div>
+  </div>
+</article>
+<article class="card" data-r="carte-blanche">
+  <a class="thumb" href="carte-blanche/proposition-3.html" aria-label="Ouvrir La tanière en 3D">
+    <img src="carte-blanche/captures/p3-perspective.jpg" alt="Perspective de la proposition La tanière" loading="lazy">
+    <img class="top" src="carte-blanche/captures/p3-dessus.jpg" alt="" loading="lazy">
+  </a>
+  <div class="body">
+    <p class="eyebrow">Carte blanche · n° 3</p>
+    <h2>La tanière</h2>
+    <p class="idea">On enferme les écrans au lieu de les mettre au centre : la chambre 2 devient une tanière sombre (murs bleu pétrole, moquette, grande TV, console, BZ pour les amis), et le séjour, sans télé, redevient une salle commune autour d'une grande table, avec un coin lecture face à la baie et un meuble à disques.</p>
+    <p class="plan"><span>Pièces</span>Séjour : salle commune (table de 7 places, coin lecture, musique). Chambre 2 : tanière (cinéma, jeux, bureau, couchage d'amis). Chambre 1 : chambre. Balcon : comptoir-belvédère et petit salon.</p>
+    <div class="links"><a class="btn" href="carte-blanche/proposition-3.html">Ouvrir en 3D</a><a class="ghost" href="https://github.com/yoperiquoi/appart-t3/blob/main/variantes/carte-blanche/README.md">Fiche détaillée</a></div>
+  </div>
+</article>
+<article class="card" data-r="carte-blanche">
+  <a class="thumb" href="carte-blanche/proposition-4.html" aria-label="Ouvrir La diagonale en 3D">
+    <img src="carte-blanche/captures/p4-perspective.jpg" alt="Perspective de la proposition La diagonale" loading="lazy">
+    <img class="top" src="carte-blanche/captures/p4-dessus.jpg" alt="" loading="lazy">
+  </a>
+  <div class="body">
+    <p class="eyebrow">Carte blanche · n° 4</p>
+    <h2>La diagonale</h2>
+    <p class="idea">Dans ce séjour, on ne circule jamais parallèlement aux murs : on va en biais, de l'entrée vers la baie et de la chambre 2 vers la chambre 1. Le salon tourne donc à 45°, avec son canapé face à l'angle de la baie et sa TV sur un chevalet.</p>
+    <p class="plan"><span>Pièces</span>Séjour : salon à 45°, coin repas pour 3 près du bar. Chambre 2 : bureau d'angle et couchage d'amis. Chambre 1 : chambre. Balcon : bistrot et fauteuil œuf.</p>
+    <div class="links"><a class="btn" href="carte-blanche/proposition-4.html">Ouvrir en 3D</a><a class="ghost" href="https://github.com/yoperiquoi/appart-t3/blob/main/variantes/carte-blanche/README.md">Fiche détaillée</a></div>
+  </div>
+</article>
+<article class="card" data-r="carte-blanche">
+  <a class="thumb" href="carte-blanche/proposition-5.html" aria-label="Ouvrir La jungle revient en 3D">
+    <img src="carte-blanche/captures/p5-perspective.jpg" alt="Perspective de la proposition La jungle revient" loading="lazy">
+    <img class="top" src="carte-blanche/captures/p5-dessus.jpg" alt="" loading="lazy">
+  </a>
+  <div class="body">
+    <p class="eyebrow">Carte blanche · n° 5</p>
+    <h2>La jungle revient</h2>
+    <p class="idea">La fresque jungle effacée par les travaux revient, mais vivante : une serre d'intérieur éclairée tient la place de la télé face au canapé, des plantes sont suspendues sur un rail devant la baie, les sols sont en carreaux de ciment à motif feuillage, le lit a…</p>
+    <p class="plan"><span>Pièces</span>Séjour : jardin d'hiver (salon, table ronde, coin orangerie). Chambre 2 : bureau des plantes et couchage d'amis. Chambre 1 : chambre à baldaquin. Balcon : potager et bistrot.</p>
+    <div class="links"><a class="btn" href="carte-blanche/proposition-5.html">Ouvrir en 3D</a><a class="ghost" href="https://github.com/yoperiquoi/appart-t3/blob/main/variantes/carte-blanche/README.md">Fiche détaillée</a></div>
+  </div>
+</article>
+</main>
+<p class="note">Les cotes viennent du plan et restent approximatives. Chaque fiche détaillée donne la liste des meubles avec leurs dimensions, les passages mesurés, ce que la proposition sacrifie et un budget indicatif.</p>
+</div>
+<script>
+const chips=document.querySelectorAll('.chip'),cards=document.querySelectorAll('.card');
+function show(f){chips.forEach(c=>c.classList.toggle('on',c.dataset.f===f));cards.forEach(c=>c.hidden=f!=='all'&&c.dataset.r!==f);}
+chips.forEach(c=>c.onclick=()=>{show(c.dataset.f);try{history.replaceState(null,'',c.dataset.f==='all'?location.pathname:'#'+c.dataset.f)}catch(e){}});
+function fromHash(){const h=location.hash.slice(1);show(h&&document.querySelector('.chip[data-f="'+h+'"]')?h:'all');}fromHash();addEventListener('hashchange',fromHash);
+</script>
+</body></html>
