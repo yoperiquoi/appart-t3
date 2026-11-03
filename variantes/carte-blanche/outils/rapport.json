@@ -1,0 +1,499 @@
+{
+ "proposition-1.html": {
+  "meubles": 41,
+  "maillages": 608,
+  "sansNom": 0,
+  "murs": {},
+  "meubles2": {},
+  "passages": [
+   {
+    "n": "Entrée → porte ch. 1",
+    "cm": 116,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Entrée : porte → séjour",
+    "cm": 103,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Devant le bar (cuisine ↔ séjour)",
+    "cm": 84,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Porte ch. 2 → séjour",
+    "cm": 105,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Accès à la baie",
+    "cm": 80,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Cuisine (plan de travail ↔ METOD)",
+    "cm": 98,
+    "min": 90,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Ch. 1 : porte → lit clos",
+    "cm": 83,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Ch. 1 : vers la porte-fenêtre",
+    "cm": 88,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Ch. 2 : porte → porte-fenêtre",
+    "cm": 99,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "SDB : porte → lavabo et baignoire",
+    "cm": 106,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Balcon : ch. 2 → ch. 1",
+    "cm": 108,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   }
+  ],
+  "palettes": [
+   "bois",
+   "nuit"
+  ],
+  "erreursJS": []
+ },
+ "proposition-2.html": {
+  "meubles": 44,
+  "maillages": 817,
+  "sansNom": 0,
+  "murs": {},
+  "meubles2": {},
+  "passages": [
+   {
+    "n": "Entrée → porte ch. 1",
+    "cm": 80,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Entrée : porte → séjour",
+    "cm": 103,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Devant le bar (cuisine ↔ séjour)",
+    "cm": 84,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Porte ch. 2 → séjour",
+    "cm": 88,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Accès à la baie",
+    "cm": 80,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Cuisine (plan de travail ↔ METOD)",
+    "cm": 98,
+    "min": 90,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Séjour : accès à la bibliothèque",
+    "cm": 81,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Salle à manger : porte → porte-fenêtre",
+    "cm": 96,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Ch. 1 : porte → porte-fenêtre",
+    "cm": 83,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Ch. 1 : ruelle gauche du lit",
+    "cm": 71,
+    "min": 60,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Ch. 1 : ruelle droite du lit",
+    "cm": 71,
+    "min": 60,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "SDB : porte → lavabo et baignoire",
+    "cm": 106,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Balcon : ch. 2 → ch. 1",
+    "cm": 108,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   }
+  ],
+  "palettes": [
+   "club",
+   "bordeaux"
+  ],
+  "erreursJS": []
+ },
+ "proposition-3.html": {
+  "meubles": 50,
+  "maillages": 810,
+  "sansNom": 0,
+  "murs": {},
+  "meubles2": {},
+  "passages": [
+   {
+    "n": "Entrée → porte ch. 1",
+    "cm": 80,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Entrée : porte → séjour",
+    "cm": 103,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Devant le bar (cuisine ↔ séjour)",
+    "cm": 84,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Porte ch. 2 → séjour",
+    "cm": 80,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Accès à la baie",
+    "cm": 80,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Table ↔ galerie basse",
+    "cm": 84,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Cuisine (plan de travail ↔ METOD)",
+    "cm": 98,
+    "min": 90,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Tanière : porte → porte-fenêtre",
+    "cm": 104,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Ch. 1 : porte → porte-fenêtre",
+    "cm": 83,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Ch. 1 : ruelle gauche du lit",
+    "cm": 71,
+    "min": 60,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Ch. 1 : ruelle droite du lit",
+    "cm": 71,
+    "min": 60,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "SDB : porte → lavabo et baignoire",
+    "cm": 106,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Balcon : ch. 2 → ch. 1",
+    "cm": 86,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   }
+  ],
+  "palettes": [
+   "petrole",
+   "aubergine"
+  ],
+  "erreursJS": []
+ },
+ "proposition-4.html": {
+  "meubles": 36,
+  "maillages": 404,
+  "sansNom": 0,
+  "murs": {},
+  "meubles2": {},
+  "passages": [
+   {
+    "n": "Entrée → porte ch. 1",
+    "cm": 80,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Entrée : porte → séjour",
+    "cm": 103,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Devant le bar (cuisine ↔ séjour)",
+    "cm": 84,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Porte ch. 2 → séjour",
+    "cm": 88,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Accès à la baie",
+    "cm": 80,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Cuisine (plan de travail ↔ METOD)",
+    "cm": 98,
+    "min": 90,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Ch. 2 : porte → porte-fenêtre",
+    "cm": 97,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Ch. 1 : porte → porte-fenêtre",
+    "cm": 83,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Ch. 1 : ruelle gauche du lit",
+    "cm": 96,
+    "min": 60,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Ch. 1 : ruelle droite du lit",
+    "cm": 89,
+    "min": 60,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "SDB : porte → lavabo et baignoire",
+    "cm": 106,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Balcon : ch. 2 → ch. 1",
+    "cm": 108,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   }
+  ],
+  "palettes": [
+   "craie",
+   "corail"
+  ],
+  "erreursJS": []
+ },
+ "proposition-5.html": {
+  "meubles": 46,
+  "maillages": 522,
+  "sansNom": 0,
+  "murs": {},
+  "meubles2": {},
+  "passages": [
+   {
+    "n": "Entrée → porte ch. 1",
+    "cm": 80,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Entrée : porte → séjour",
+    "cm": 103,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Devant le bar (cuisine ↔ séjour)",
+    "cm": 84,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Porte ch. 2 → séjour",
+    "cm": 80,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Accès à la baie",
+    "cm": 80,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Cuisine (plan de travail ↔ METOD)",
+    "cm": 98,
+    "min": 90,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Ch. 2 : porte → porte-fenêtre",
+    "cm": 140,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Ch. 1 : porte → porte-fenêtre",
+    "cm": 82,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Ch. 1 : ruelle gauche du lit",
+    "cm": 66,
+    "min": 60,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Ch. 1 : ruelle droite du lit",
+    "cm": 66,
+    "min": 60,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "SDB : porte → lavabo et baignoire",
+    "cm": 106,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   },
+   {
+    "n": "Balcon : ch. 2 → ch. 1",
+    "cm": 87,
+    "min": 80,
+    "ok": true,
+    "obstacles": []
+   }
+  ],
+  "palettes": [
+   "jungle",
+   "serre"
+  ],
+  "erreursJS": []
+ }
+}
