@@ -216,22 +216,25 @@ for(const [id,delta] of [['rotate-left',-15],['rotate-right',15]])byId(id).oncli
 byId('mirror').onclick=()=>{const item=items.find(p=>p.id===selected);if(item){item.flip=!item.flip;draw();}};
 byId('delete').onclick=()=>{items=items.filter(p=>p.id!==selected);choose(null);};
 for(const id of ['square-bar',...heaters.map(h=>h.id)])byId(id).onchange=draw;
+const currentSalon={
+  square:true,heaters:[false,true],
+  items:[
+    {"kind":"table","name":"Table basse \u00b7 Rectangle","w":90,"d":50,"x":611,"y":387,"angle":0},
+    {"kind":"dining-chair","name":"Chaise de table \u00b7 Standard","w":45,"d":45,"x":382,"y":323,"angle":0},
+    {"kind":"dining-chair","name":"Chaise de table \u00b7 Standard","w":45,"d":45,"x":384,"y":401,"angle":180},
+    {"kind":"dining-chair","name":"Chaise de table \u00b7 Standard","w":45,"d":45,"x":336,"y":355,"angle":270},
+    {"kind":"dining-chair","name":"Chaise de table \u00b7 Standard","w":45,"d":45,"x":433,"y":359,"angle":90},
+    {"kind":"dining","name":"Table \u00e0 manger \u00b7 Ronde","w":110,"d":110,"x":383,"y":360,"angle":0,"form":"round"},
+    {"kind":"sofa","name":"Canap\u00e9 \u00b7 2 places","w":160,"d":90,"x":535,"y":391,"angle":90},
+    {"kind":"sofa","name":"Canap\u00e9 \u00b7 M\u00e9ridienne compacte","w":210,"d":140,"x":641,"y":317,"angle":180,"form":"angle","flip":true},
+    {"kind":"console","name":"Meuble TV \u00b7 Standard","w":160,"d":40,"x":624,"y":480,"angle":0},
+    {"kind":"tv","name":"T\u00e9l\u00e9vision \u00b7 65 pouces","w":145,"d":8,"x":624,"y":490,"angle":0}
+  ]
+};
 function restore(){
-  items=[];
-  const sofa=add('sofa',types[0][2][4],652,315,180);sofa.flip=true;
-  add('chair',['Club',80,80],559,350,163);
-  add('table',['Rectangle',90,50],611,403);
-  add('console',types[4][2][1],622,480);
-  add('tv',types[3][2][1],622,490);
-  const tableX=440,tableY=395,chairOffset=62*scale;
-  const chair=types.find(([kind])=>kind==='dining-chair')[2][0];
-  add('dining-chair',chair,tableX,tableY-chairOffset,0);
-  add('dining-chair',chair,tableX,tableY+chairOffset,180);
-  add('dining-chair',chair,tableX-chairOffset,tableY,270);
-  add('dining-chair',chair,tableX+chairOffset,tableY,90);
-  add('dining',types[5][2][0],tableX,tableY);
-  byId('square-bar').checked=false;
-  for(const heater of heaters)byId(heater.id).checked=true;
+  items=currentSalon.items.map(item=>({...item,id:++nextId}));
+  byId('square-bar').checked=currentSalon.square;
+  heaters.forEach((heater,index)=>{byId(heater.id).checked=currentSalon.heaters[index];});
   choose(null);
 }
 byId('restore').onclick=restore;

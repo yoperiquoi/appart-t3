@@ -448,7 +448,7 @@ function kitchen(){
   pbox(450,30,492,62,0.9,0.906,L(0x9aa0a6),g);
   pbox(367,240,420,285,0,0.86,oak,g);
   pbox(355,240,425,302.8,0.86,0.9,slate,g);
-  if(mode!=='projet'||!salonPreview?.square){
+  if(mode!=='projet'||!(salonPreview??currentSalon).square){
     cyl(390,302.8,35/S,0.86,0.9,slate,g);
     cyl(376,318.8,0.03,0,0.86,L(0xc9ccd0),g);
     cyl(404,318.8,0.03,0,0.86,L(0xc9ccd0),g);
@@ -513,8 +513,8 @@ function pfLeaf(hz,len,dir){
 function common(){
   shell();kitchen();bathroom();
   pfLeaf(220,0.9*S,-1);pfLeaf(455,0.9*S,-1);pfLeaf(515,0.9*S,1);
-  if(mode!=='projet'||salonPreview?.heaters[0]!==false)rad(497,711-0.75*S,711,I,-1,true,0.12,0.95);
-  if(mode!=='projet'||salonPreview?.heaters[1]!==false)rad(255,711-0.75*S,711,I,1,true,0.12,0.95);
+  if(mode!=='projet'||(salonPreview??currentSalon).heaters[0]!==false)rad(497,711-0.75*S,711,I,-1,true,0.12,0.95);
+  if(mode!=='projet'||(salonPreview??currentSalon).heaters[1]!==false)rad(255,711-0.75*S,711,I,1,true,0.12,0.95);
   rad(497,664,694,I,1,true,0.12,0.9);
   radV(720,26,53,E,-1,0.12,0.95);
   curt(262,290,0xf3f1ea,0.8);curt(440,468,0xf3f1ea,0.8);
@@ -538,6 +538,21 @@ function chair(cx,cz,back){
   if(back==='W')pbox(cx-h,cz-h,cx-h+2,cz+h,0.47,0.88,m,g);
   if(back==='E')pbox(cx+h-2,cz-h,cx+h,cz+h,0.47,0.88,m,g);
 }
+const currentSalon={
+  square:true,heaters:[false,true],
+  items:[
+    {"kind":"table","name":"Table basse \u00b7 Rectangle","w":90,"d":50,"x":611,"y":387,"angle":0},
+    {"kind":"dining-chair","name":"Chaise de table \u00b7 Standard","w":45,"d":45,"x":382,"y":323,"angle":0},
+    {"kind":"dining-chair","name":"Chaise de table \u00b7 Standard","w":45,"d":45,"x":384,"y":401,"angle":180},
+    {"kind":"dining-chair","name":"Chaise de table \u00b7 Standard","w":45,"d":45,"x":336,"y":355,"angle":270},
+    {"kind":"dining-chair","name":"Chaise de table \u00b7 Standard","w":45,"d":45,"x":433,"y":359,"angle":90},
+    {"kind":"dining","name":"Table \u00e0 manger \u00b7 Ronde","w":110,"d":110,"x":383,"y":360,"angle":0,"form":"round"},
+    {"kind":"sofa","name":"Canap\u00e9 \u00b7 2 places","w":160,"d":90,"x":535,"y":391,"angle":90},
+    {"kind":"sofa","name":"Canap\u00e9 \u00b7 M\u00e9ridienne compacte","w":210,"d":140,"x":641,"y":317,"angle":180,"form":"angle","flip":true},
+    {"kind":"console","name":"Meuble TV \u00b7 Standard","w":160,"d":40,"x":624,"y":480,"angle":0},
+    {"kind":"tv","name":"T\u00e9l\u00e9vision \u00b7 65 pouces","w":145,"d":8,"x":624,"y":490,"angle":0}
+  ]
+};
 const salonPreview=(()=>{
   if(new URLSearchParams(location.search).get('salon')!=='1')return null;
   document.querySelector('a[href="salon/"]').href='salon/?reprendre=1';
@@ -546,14 +561,14 @@ const salonPreview=(()=>{
     return Array.isArray(layout?.items)&&layout.heaters?.length===2?layout:null;
   }catch{return null;}
 })();
-function previewSalon(){
+function previewSalon(layout){
   const themeColors=theme();
   const materials={
     sofa:L(themeColors.sofa),chair:L(themeColors.arm),table:L(0xcaa97c),
     tv:L(0x262b2d),console:L(0xf1efe9),dining:L(0xd8c3a0),'dining-chair':L(0x8b6a4a)
   };
   const legs=L(0x5a4330),cushion=L(themeColors.sofaC),black=L(0x242424),blackCushion=L(0x343434);
-  for(const item of salonPreview.items){
+  for(const item of layout.items){
     const {kind}=item,vimle=item.model==='vimle',mat=vimle?black:materials[kind];
     if(!mat||![item.w,item.d,item.x,item.y,item.angle].every(Number.isFinite))continue;
     const w=item.w/200,d=item.d/200;
@@ -613,39 +628,7 @@ function previewSalon(){
   }
 }
 function furniture(){
-  if(mode==='projet'&&salonPreview)previewSalon();
-  else{
-  const g=furnGroup,tx=440,tz=395,r=0.55*S,d=0.62*S;
-  cyl(tx,tz,0.55,0.72,0.75,L(0xd8c3a0),g);
-  cyl(tx,tz,0.04,0,0.72,L(0x5a4330),g);
-  cyl(tx,tz,0.22,0,0.02,L(0x5a4330),g);
-  chair(tx,tz-d,'N');chair(tx,tz+d,'S');chair(tx-d,tz,'W');chair(tx+d,tz,'E');
-  const T=theme(),fab=L(T.sofa),cush=L(T.sofaC),x0=593,x1=713.2,z0=258.4,z1=z0+0.95*S,cx=x1-0.95*S,cz1=z0+1.65*S;
-  pbox(x0,z0,x1,z1,0.08,0.42,fab,g);
-  pbox(cx,z1,x1,cz1,0.08,0.42,fab,g);
-  pbox(x0,z0,x1,z1,0,0.08,L(0x3a3a3a),g);
-  pbox(cx,z1,x1,cz1,0,0.08,L(0x3a3a3a),g);
-  pbox(x0+0.18*S,z0+0.2*S,cx,z1,0.42,0.5,cush,g);
-  pbox(cx,z0+0.2*S,x1-0.2*S,cz1,0.42,0.5,cush,g);
-  pbox(x0,z0,x1,z0+0.2*S,0.42,0.85,fab,g);
-  pbox(x1-0.2*S,z0,x1,cz1,0.42,0.85,fab,g);
-  pbox(x0,z0,x0+0.18*S,z1,0.42,0.62,fab,g);
-  const ctx1=642,ctx0=ctx1-0.9*S,ctz0=386,ctz1=ctz0+0.5*S;
-  pbox(ctx0,ctz0,ctx1,ctz1,0.38,0.42,L(0xcaa97c),g);
-  pbox(ctx0+2,ctz0+2,ctx1-2,ctz1-2,0,0.38,L(0x5a4330),g);
-  const ag=new THREE.Group(),h=0.4,am=L(theme().arm),ac=L(theme().armC),wd=L(0x5a4330);
-  [[-1,-1],[1,-1],[-1,1],[1,1]].forEach(q=>box(q[0]*(h-0.04)-0.015,q[1]*(h-0.04)-0.015,q[0]*(h-0.04)+0.015,q[1]*(h-0.04)+0.015,0,0.12,wd,ag));
-  box(-h,-h,h,h,0.12,0.4,am,ag);
-  box(-h+0.2,-h+0.14,h,h-0.14,0.4,0.48,ac,ag);
-  box(-h,-h,-h+0.2,h,0.4,0.88,am,ag);
-  [-h,h-0.14].forEach(z=>box(-h,z,h,z+0.14,0.4,0.64,am,ag));
-  const acx=559,acz=350;ag.position.set(X(acx),0,Z(acz));ag.rotation.y=-1.272;g.add(ag);
-  const tvx=676-0.8*S,wz=497-I*S/2;
-  pbox(tvx-0.8*S,wz-0.4*S,tvx+0.8*S,wz,0,0.45,L(0xf1efe9),g);
-  pbox(tvx-0.8*S,wz-0.4*S-0.3,tvx+0.8*S,wz-0.4*S,0.05,0.45,L(0xdedbd2),g);
-  pbox(tvx-0.73*S,wz-0.05*S,tvx+0.73*S,wz,1.0,1.83,L(0x151617),furnTall);
-  pbox(tvx-0.71*S,wz-0.05*S-0.3,tvx+0.71*S,wz-0.05*S,1.02,1.81,L(0x2a2f36),furnTall);
-  }
+  previewSalon(salonPreview??currentSalon);
   const g=furnGroup;
   const kx1=520-I*S/2,kx0=kx1-0.392*S,kz1=254,kz0=kz1-1.6*S,kw=0.8*S,ash=L(0xd9c9ab);
   pbox(kx0+1.5,kz0+1,kx1,kz1-1,0,0.08,L(0x3a3a3a),g);
