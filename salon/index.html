@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aménager le salon</title>
+<link rel="stylesheet" href="salon.css">
+<script src="salon.js" defer></script>
+</head>
+<body>
+<header><a href="../">← Rendu 3D</a><h1>Aménager le salon</h1><p>Déplace les meubles sur le plan et compare tes essais.</p></header>
+<main>
+<section class="stage" aria-label="Plan du salon">
+  <div class="stagebar"><strong>Vue de dessus</strong><button id="show-3d">Voir cet agencement en 3D</button><label><input id="square-bar" type="checkbox"> Tester le bar sans arrondi</label></div>
+  <svg id="plan" viewBox="145 224 602 355" aria-label="Plan interactif du séjour">
+    <defs><pattern id="tiles" x="325" y="273" width="40.936" height="40.936" patternUnits="userSpaceOnUse"><rect width="40.936" height="40.936" fill="#e8e4db" stroke="#d6d0c4" stroke-width=".55"/></pattern></defs>
+    <path d="M360 224H520V255H720V497H437V565H157V350H300V232H360Z" fill="url(#tiles)"/>
+    <path class="wall" d="M360 224V232H300V350H157V415 M157 470V565H175 M215 565H245 M290 565H300V516 M437 565V497 M490 497H720V455 M720 275V255H585 M525 255H520V224"/>
+    <path class="wall" d="M437 497H445"/>
+    <path d="M720 275V455" stroke="#78a6ab" stroke-width="4"/>
+    <path d="M157 415V470 M175 565H215 M245 565H290 M445 497H490 M525 255H585" stroke="#a8a096" stroke-width="1" stroke-dasharray="4 3" fill="none"/>
+    <rect x="360" y="224" width="65" height="20" rx="2" class="counter"/>
+    <rect x="492" y="224" width="24" height="30" rx="2" class="counter"/>
+    <rect x="355" y="240" width="70" height="62.8" rx="2" class="counter"/>
+    <path id="bar-end" d="M355 302.8a35 35 0 0 0 70 0Z" class="counter"/>
+    <g aria-label="Placard du couloir, deux m?tres par soixante centim?tres">
+      <rect x="300" y="524.2" width="137" height="40.8" fill="#b97757" stroke="#885339" stroke-width="1"/>
+      <path d="M300 522.5H437 M344 522.5V529 M392 522.5V529" fill="none" stroke="#885339" stroke-width="2"/>
+      <text x="368.5" y="548" class="map-label light">Placard coulissant</text>
+    </g>
+    <text x="390" y="280" class="map-label light">Bar</text>
+    <text x="553" y="245" class="map-label">Chambre 2</text>
+    <text x="490" y="518" class="map-label">Chambre 1</text>
+    <text x="227" y="405" class="map-label">Entrée</text>
+    <text x="735" y="360" class="map-label" transform="rotate(90 735 360)">Balcon</text>
+    <path d="M713.2 455V393.8a61.2 61.2 0 0 0-61.2 61.2Z" fill="#bcd9e2" fill-opacity=".55" stroke="#4c8295" stroke-width="1" stroke-dasharray="3 2"/>
+    <path d="M713.2 455H652" stroke="#4c8295" stroke-width="3"/>
+    <g id="radiators"></g>
+    <g id="furniture"></g>
+    <path d="M596 545h68m-68-3v6m68-6v6" fill="none" stroke="#4c4a42"/>
+    <text x="630" y="559" class="map-label">1 m</text>
+  </svg>
+  <div class="stagefoot"><span><i class="door-dot"></i> Débattement de la porte-fenêtre · 90 cm</span><span><i class="rad-dot"></i> Radiateur</span></div>
+<p id="status" role="status"></p>
+</section>
+<aside>
+<section class="panel"><h2>Meubles</h2><div id="catalogue"></div></section>
+<section class="panel"><h2>Meuble sélectionné</h2><p id="empty">Choisis un meuble sur le plan.</p>
+<div id="editor" hidden><strong id="item-name"></strong><div class="dimensions"><label>Largeur (cm)<input id="width" type="number" min="20" max="500" step="1"></label><label>Profondeur (cm)<input id="depth" type="number" min="3" max="350" step="1"></label></div>
+<div class="actions"><button id="rotate-left">↶ 15°</button><button id="rotate-right">↷ 15°</button><button id="mirror">Inverser le retour</button><button id="delete" class="danger">Supprimer</button></div></div>
+</section>
+<section class="panel"><h2>Radiateurs</h2><label class="check"><input id="rad-south" type="checkbox" checked> Mur de la chambre 1</label><label class="check"><input id="rad-north" type="checkbox" checked> Mur de la chambre 2 <small>position estimée</small></label></section>
+<section class="panel"><h2>Agencements</h2><div class="actions"><button id="restore">Projet actuel</button><button id="clear">Vider le salon</button><button id="save">Garder cet essai</button></div><div id="saved"></div></section>
+</aside>
+</main>
+</body></html>

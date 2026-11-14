@@ -35,6 +35,10 @@
 32. Portes-fenêtres ouvrant vers l'intérieur (absentes du plan, signalées par l'utilisateur avec photo) : vantail ouvert à 90° + zone de débattement bleue au sol, en Avant et en Projet. Séjour : vantail de ≈ 95 cm côté chambre 1 (charnière au sud, comme sur la photo) ; chambre 2 (bureau) : 88 cm, charnière côté séjour (corrigé par l'utilisateur) ; chambre 1 : 88 cm, charnière côté séjour (sens déduits des arcs du plan). Table basse réduite à 0,90 × 0,50 et décalée pour libérer le débattement du séjour. Les 30 propositions de `variantes/` n'ont pas été mises à jour.
 33. Portes-fenêtres : 2,20 × 0,90 m (cote donnée par l'utilisateur) ; ouvertures des chambres élargies à 90 cm et vantail du séjour ramené à 90 cm.
 34. Bar : le Projet garde le bout arrondi (demande de l'utilisateur). Les nouvelles propositions autour du canapé, faites à part dans `variantes/`, retirent ce bout arrondi (plateau rectangulaire 1,03 × 0,92 m) pour gagner ≈ 50 cm dans le séjour.
+35. Sols du Projet : Saint Maclou Betonico blanc 60 x 60 cm au séjour, en cuisine et à l’entrée, Betonico gris 60 x 60 cm en SDB et WC. Pose droite, trame continue dans la zone blanche, coupes équilibrées et joints simulés de 2 mm. Textures et teintes approximatives.
+36. Chambres : stratifie Easylife Hydro 8 mm, chene dore, lames 128,5 x 19,2 cm a joints decales et sur-plinthes MDF blanches 220 x 13 cm. Plinthes Betonico assorties 60 x 7 cm en zones carrelees, interrompues aux ouvertures.
+37. Page salon/ : plan interactif, formats de meubles et dimensions libres, rotation, essais sauvegardés dans le navigateur, débattement de la porte-fenêtre, deux radiateurs masquables, alertes de chevauchement et essai du bar sans arrondi. Second radiateur ajouté au rendu sur le mur de la chambre 2, face au premier (position et cotes estimées).
+38. Les deux radiateurs du salon font 75 cm de large, dans le plan interactif et le rendu 3D. Le bord vers la baie est conservé.
 
 ## Décisions et interprétations
 - « Porte condamnée » = ancienne porte du couloir.

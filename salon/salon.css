@@ -1,0 +1,40 @@
+:root{font-family:"Segoe UI",system-ui,sans-serif;color:#282e28;background:#f4f3ed;accent-color:#335849;color-scheme:light}
+*{box-sizing:border-box}
+body{margin:0 auto;max-width:1550px;padding:clamp(14px,3vw,38px)}
+header{margin-bottom:24px} header a{color:#335849;font-size:.9rem}
+h1{font-size:clamp(1.9rem,4vw,3.3rem);line-height:1.1;margin:.35em 0 .14em;letter-spacing:-.045em}
+p{margin:.5em 0;color:#555b50}
+main{display:grid;grid-template-columns:minmax(0,1fr) 315px;gap:18px;align-items:start}
+.stage,.panel{background:#fffdf7;border:1px solid #dfded3;border-radius:15px}
+.stage{overflow:hidden;position:sticky;top:12px}
+.stagebar,.stagefoot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;padding:12px 15px;font-size:.85rem}
+.stagefoot{justify-content:flex-start;border-top:1px solid #e6e3da;color:#4b5149}
+.stagefoot i{display:inline-block;width:11px;height:11px;margin-right:4px;border-radius:2px}
+.door-dot{background:#a0c7d4}.rad-dot{background:#ab563c}
+svg{display:block;width:100%;height:auto;background:#f7f6f0;touch-action:none;user-select:none}
+.wall{fill:none;stroke:#66665d;stroke-width:5;stroke-linejoin:round}
+.counter{fill:#585a54}
+.map-label{font:9px "Segoe UI",sans-serif;fill:#575950;text-anchor:middle;pointer-events:none}
+.light{fill:#fff}
+aside{display:grid;gap:10px}.panel{padding:12px}
+h2{font-size:.96rem;margin:0 0 9px}
+button,input,select{font:inherit}
+button,select,input[type=number]{border:1px solid #d8dbce;background:#f7f8f1;border-radius:7px;padding:6px 8px;color:inherit;min-width:0}
+button{cursor:pointer;font-size:.84rem}button:hover{background:#e8eee3}
+button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid #345c4b;outline-offset:2px}
+.danger{color:#8e342a}
+.catalogue-row,.saved-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:5px;margin-top:5px}
+.catalogue-row select{font-size:.83rem;width:100%}
+.actions{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
+.dimensions{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:8px;font-size:.8rem}
+.dimensions input{display:block;width:100%;margin-top:4px}
+.check{display:block;font-size:.88rem;margin:5px 0}.check small{color:#625b50}
+.piece{cursor:grab;outline:none}.piece:active{cursor:grabbing}
+.piece .shape{stroke:#605c52;stroke-width:.85}
+.piece.selected .shape,.piece:focus-visible .shape{stroke:#284f3f;stroke-width:2}
+.piece.blocked .shape{stroke:#b54230;stroke-width:2}
+.piece text{pointer-events:none;fill:#222921;font:8px "Segoe UI",sans-serif;text-anchor:middle}
+.piece .screen-mark{pointer-events:none;fill:none;stroke:#535a51;stroke-width:1.4}
+#status{min-height:1.4rem;font-size:.85rem;margin:0;padding:0 15px 10px}
+@media(max-width:800px){main{grid-template-columns:1fr}.stage{position:static}aside{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:480px){aside{grid-template-columns:1fr}}
