@@ -1,0 +1,10 @@
+<!doctype html><html lang="fr"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Atelier murs · Appartement T3</title><link rel="stylesheet" href="style.css">
+<header><a href="../?salon=1">← Appartement T3</a><h1>Atelier murs</h1><a class="action" href="../?salon=1&amp;decor=1">Voir en 3D ↗</a></header>
+<main><aside><h2>Plan de l’appartement</h2><svg id="plan" viewBox="135 -5 710 740" aria-label="Sélectionner une face de mur sur le plan"></svg>
+<label>Pièce<select id="room"></select></label><label>Mur<select id="wall"></select></label></aside>
+<section><h2 id="name"></h2><div class="frame"><svg id="elevation" aria-label="Aperçu du mur de face"></svg></div><p id="size"></p>
+<div class="tabs" aria-label="Revêtement"><button>Peinture</button><button>Papier peint</button><button>Tasseaux</button></div>
+<div id="samples"></div><label id="custom">Couleur sur mesure <input type="color" value="#ede9df"></label>
+<label id="coverage">Pose du décor<select><option value="plein">Tout le mur</option><option value="bande">Bande centrale de 60 cm</option></select></label>
+<footer><button id="remove">Retirer le décor</button><button id="reset">Rétablir ce mur</button><small id="status" aria-live="polite"></small></footer></section></main>
+<script type="module" src="editor.js"></script></html>

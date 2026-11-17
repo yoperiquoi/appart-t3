@@ -64,12 +64,14 @@ a.chip:hover{background:var(--hover)}
     <button id="b-furn" class="chip">Meubles</button>
     <label class="tog" for="lab"><input type="checkbox" id="lab">Noms</label>
     <a class="chip" href="../salon/">Aménager le salon</a>
+    <a class="chip" href="../decoration/">Décorer les murs</a>
     <a class="chip" href="https://yoperiquoi.github.io/appart-t3/variantes/">30 propositions →</a>
   </div>
   <div class="bar" id="rooms" role="toolbar" aria-label="Pièce">
     <span class="lbl">Pièce</span>
     <button data-f="all">Tout</button>
     <button data-f="sejour">Séjour</button>
+    <button data-f="tv">Mur TV</button>
     <button data-f="ch1">Chambre 1</button>
     <button data-f="ch2">Chambre 2</button>
     <button data-f="entree">Entrée</button>
@@ -79,6 +81,13 @@ a.chip:hover{background:var(--hover)}
   <div class="bar" id="paintRow" role="toolbar" aria-label="Peinture">
     <span class="lbl">Peinture</span>
     <span class="opts">
+    <button data-p="sauge">Lin et sauge</button>
+    <button data-p="argile">Sable et argile</button>
+    <button data-p="brume">Craie et brume</button>
+    <button data-p="ivoire">Ivoire uni</button>
+    <button data-p="bande">Bande de chêne</button>
+    <button data-p="panneau">Panneau TV</button>
+    <button data-p="lin">Lin et taupe</button>
     <button data-p="actuelle">Actuelle</button>
     <button data-p="naturel">Naturel</button>
     <button data-p="terre">Terre cuite</button>
@@ -718,7 +727,7 @@ function balcony(){
   [[tx0+2,tz0+2],[tx1-4,tz0+2],[tx0+2,tz1-4],[tx1-4,tz1-4]].forEach(p=>pbox(p[0],p[1],p[0]+2,p[1]+2,0,0.72,met,g));
   const cxw=tx0-0.25*S,cxm=(tx0+tx1)/2;
   chair(cxw,mz-0.3*S,'W');chair(cxw,mz+0.3*S,'W');chair(cxm,tz0-0.3*S,'N');chair(cxm,tz1+0.3*S,'S');
-  const sz0=15+2,sz1=sz0+0.7*S,sx0=fx+3,sx1=sx0+1.3*S,gr=L(0x4a4d50),gr2=L(0x5c6064);
+  const sz0=15+2,sz1=sz0+0.7*S,sx0=fx+3,sx1=sx0+1.3*S,gr=L(paints[paintKey].balcon??0x4a4d50),gr2=L(paints[paintKey].balcon??0x5c6064);
   pbox(sx0,sz0,sx1,sz1,0,1.8,gr,g);
   pbox(sx0-1,sz0-1,sx1+1,sz1+1,1.8,1.86,gr2,g);
   [sx0+0.6,(sx0+sx1)/2+0.3].forEach(x=>pbox(x,sz1,x+0.65*S-1,sz1+0.8,0.05,1.75,gr2,g));
@@ -832,12 +841,12 @@ function setMode(m){
 }
 const tgt=new THREE.Vector3(4.7,0,5.0);
 const st={az:0.35,el:0.95,dist:17};
-const focus={all:{x:4.7,z:5.0,d:17},sejour:{x:X(505),z:Z(300),d:10},ch1:{x:X(578),z:Z(601),d:7},ch2:{x:X(620),z:Z(135),d:6.5},entree:{x:X(235),z:Z(460),d:6},sdb:{x:X(300),z:Z(635),d:6},balcon:{x:X(772),z:Z(360),d:9.5}};
+const focus={tv:{x:X(613),z:Z(493),d:3.35},all:{x:4.7,z:5.0,d:17},sejour:{x:X(505),z:Z(300),d:10},ch1:{x:X(578),z:Z(601),d:7},ch2:{x:X(620),z:Z(135),d:6.5},entree:{x:X(235),z:Z(460),d:6},sdb:{x:X(300),z:Z(635),d:6},balcon:{x:X(772),z:Z(360),d:9.5}};
 let cur='all',goal=null;
 function goTo(f,top){
-  cur=f;const p=focus[f];
+  cur=f;tgt.y=f==='tv'?1.22:0;const p=focus[f];
   const fit=Math.max(1,Math.min(2.2,1.25/cam.aspect));
-  goal={x:p.x,z:p.z,az:top?0:0.35,el:top?1.55:0.95,dist:(top?p.d*0.9:p.d)*fit};
+  goal={x:p.x,z:p.z,az:top?0:f==='tv'?Math.PI:0.35,el:top?1.55:f==='tv'?0.16:0.95,dist:(top?p.d*0.9:p.d)*(f==='tv'?1:fit)};
   document.querySelectorAll('#rooms button').forEach(b=>b.classList.toggle('on',b.dataset.f===f));
   document.getElementById('b-top').classList.toggle('on',!!top);document.getElementById('b-persp').classList.toggle('on',!top);
   dirty=true;
@@ -901,7 +910,20 @@ const paints={
   terre:{n:'B · Terre cuite',w:{ch1:[0xc47a5e,'Ch. 1 tête de lit · terracotta'],ch2:[0xd4a55c,'Ch. 2 mur du BZ · ocre doux'],sej:[0xe0cbb0,'Séjour mur TV · sable']},f:{sofa:0xd9c7a8,sofaC:0xc47a5e,arm:0xb86b4f,armC:0xc98066,bz:0xd8c8ae,bzC:0xd4a55c,plaid:0xc47a5e}},
   profond:{n:'C · Profond',w:{ch1:[0x34495e,'Ch. 1 tête de lit · bleu nuit'],ch2:[0x48604f,'Ch. 2 mur du BZ · vert forêt'],sej:[0x80835a,'Séjour mur TV · vert olive']},f:{sofa:0x4a4f57,sofaC:0x80835a,arm:0x48604f,armC:0x56705e,bz:0xb9bbb8,bzC:0x48604f,plaid:0x34495e}}
 };
+paints.lin={n:'Lin et taupe',w:{lin:[0xede9df,'Cuisine, séjour et entrée · blanc lin'],sej:[0xc5baaa,'Mur TV · taupe clair']},f:paints.actuelle.f};
+const fondClair={lin:paints.lin.w.lin,sej:[0xf5f1e8,'Mur TV · ivoire chaud']};
+paints.ivoire={w:fondClair,f:paints.actuelle.f};
+paints.bande={w:{...fondClair,bande:[0xd6bb93,'Tasseaux en chêne clair · bande de 60 cm']},f:paints.actuelle.f};
+paints.panneau={w:{...fondClair,panneau:[0xd6bb93,'Tasseaux en chêne clair · panneau de 180 cm']},f:paints.actuelle.f};
+function paletteAppartement(base,fond,chambre,bureau,bain,balcon){
+  return {w:{lin:base,sej:fond,bande:paints.bande.w.bande,ch1:chambre,ch2:bureau,bain},balcon,f:paints.actuelle.f};
+}
+paints.sauge=paletteAppartement(fondClair.lin,fondClair.sej,[0xb5bfaa,'Tête de lit · sauge'],[0xc3bbaa,'Mur du BZ · ficelle'],[0xd4e1d9,'Salle de bains · vert d’eau'],0x919d88);
+paints.argile=paletteAppartement([0xe8dccb,'Pièces de vie · sable'],[0xf4ede2,'Mur TV · craie chaude'],[0xcba89a,'Tête de lit · argile rosée'],[0xcbbd9e,'Mur du BZ · avoine'],[0xe1d7c9,'Salle de bains · calcaire'],0xb38670);
+paints.brume=paletteAppartement([0xe6e6df,'Pièces de vie · blanc perle'],[0xf4f3eb,'Mur TV · blanc craie'],[0xb4c2c5,'Tête de lit · bleu brume'],[0xb6c3b9,'Mur du BZ · eucalyptus'],[0xd2dfe2,'Salle de bains · bleu porcelaine'],0x81949b);
+const decorView=new URLSearchParams(location.search).get('decor')==='1';
 let paintKey='actuelle';
+let renderPersonalDecor=null;
 function theme(){return paints[paintKey].f;}
 function pface(hor,c,a,b,t,side,y0,y1,col){
   const o=side*(t/2+0.017),m=L(col);
@@ -918,7 +940,32 @@ function paintWall(hor,c,a0,a1,t,side,ops,col){
   });
   if(a1>cur)pface(hor,c,cur,a1,t,side,0,H,col);
 }
+function tvSlats(center,width,col){
+  const left=X(center)-width/2,back=Z(497)-I/2-0.022;
+  const material=L(col);
+  for(let x=left;x+0.03<=left+width+0.0001;x+=0.05){
+    box(x,back-0.018,x+0.03,back,0.075,H,material,paintGroup);
+  }
+}
 const paintWalls={
+  bain:col=>paintWall(false,232,565+I*S/2,705-E*S/2,I,1,[],col),
+  bande:col=>tvSlats(570,0.60,col),
+  panneau:col=>tvSlats(624,1.80,col),
+  lin:col=>{
+    paintWall(true,15,360,520,E,1,[[475,520,'win']],col);
+    paintWall(false,360,15,232,E,1,[],col);
+    paintWall(false,520,15,255,I,-1,[],col);
+    paintWall(true,255,520,720,I,1,[[525,585,'open']],col);
+    paintWall(false,720,255,497,E,-1,[[275,455,'pf']],col);
+    paintWall(true,232,300,360,E,1,[],col);
+    paintWall(false,300,232,350,E,1,[],col);
+    paintWall(true,350,157,300,E,1,[],col);
+    paintWall(false,157,350,565,E,1,[[415,470,'door']],col);
+    paintWall(false,300,350,412,I,1,[],col);
+    paintWall(false,437,497,565,I,-1,[],col);
+    paintWall(false,300,516,565,I,-1,[],col);
+    paintWall(true,565,157,300,I,-1,[[175,215,'open'],[245,290,'open']],col);
+  },
   ch1:col=>paintWall(true,705,437+I*S/2,720-E*S/2,E,-1,[],col),
   ch2:col=>paintWall(false,520,15+E*S/2,255-I*S/2,I,1,[],col),
   sej:col=>paintWall(true,497,437-I*S/2,720-E*S/2,I,-1,[[445,490,'door']],col)
@@ -928,14 +975,16 @@ function applyPaint(){
   clearGrp(paintGroup);
   const p=paints[paintKey];
   if(mode==='projet')Object.keys(p.w).forEach(k=>paintWalls[k](p.w[k][0]));
+  if(mode==='projet'&&renderPersonalDecor)renderPersonalDecor(paintGroup);
   document.querySelectorAll('#paintRow button').forEach(b=>b.classList.toggle('on',b.dataset.p===paintKey));
   paintInfo.innerHTML=Object.keys(p.w).map(k=>'<span style="display:flex;align-items:center;gap:5px"><span style="width:12px;height:12px;border-radius:3px;border:1px solid var(--border);background:#'+p.w[k][0].toString(16).padStart(6,'0')+'"></span>'+p.w[k][1]+'</span>').join('')||'<span>Ch. 1 tête de lit vert sauge, reste blanc</span>';
+  if(renderPersonalDecor)paintInfo.textContent='Ma décoration mur par mur';
   dirty=true;
 }
 document.querySelectorAll('#paintRow button').forEach(b=>{
   const p=paints[b.dataset.p],cols=Object.keys(p.w).length?Object.keys(p.w).map(k=>p.w[k][0]):[0x9db8aa,0xf4f1ea];
   const d=document.createElement('span');d.className='dots';d.innerHTML=cols.map(c=>'<i style="background:#'+c.toString(16).padStart(6,'0')+'"></i>').join('');b.prepend(d);
-  b.onclick=()=>{paintKey=b.dataset.p;setMode(mode);};
+  b.onclick=()=>{renderPersonalDecor=null;paintKey=b.dataset.p;setMode(mode);};
 });
 const zoom=f=>{goal=null;st.dist=Math.min(35,Math.max(2,st.dist*f));dirty=true;};
 document.getElementById('b-zin').onclick=()=>zoom(0.82);
@@ -949,5 +998,7 @@ document.getElementById('b-persp').onclick=()=>goTo(cur,false);
 document.querySelectorAll('#rooms button').forEach(b=>b.onclick=()=>goTo(b.dataset.f,false));
 document.getElementById('lab').onchange=e=>{showLab=e.target.checked;dirty=true;};
 const ro=new ResizeObserver(resize);ro.observe(wrap);ro.observe(document.querySelector('.ui'));
-setWalls(1.1/H);setMode('projet');resize();goTo(salonPreview?'sejour':'all');Object.assign(st,{az:goal.az,el:goal.el,dist:goal.dist});tgt.set(goal.x,0,goal.z);goal=null;render();
+const tvView=new URLSearchParams(location.search).get('vue')==='tv';
+if(decorView)import('../decoration/materials.js').then(module=>{renderPersonalDecor=module.renderDecor;applyPaint();});
+setWalls(tvView||decorView?1:1.1/H);setMode('projet');resize();goTo(tvView?'tv':salonPreview?'sejour':'all');Object.assign(st,{az:goal.az,el:goal.el,dist:goal.dist});tgt.set(goal.x,tgt.y,goal.z);goal=null;render();
 </script>
