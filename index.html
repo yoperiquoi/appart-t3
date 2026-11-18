@@ -41,6 +41,8 @@ a.chip:hover{background:var(--hover)}
 .zoom{display:flex;flex-direction:column;padding:3px;border:1px solid var(--border);border-radius:12px;background:var(--panel);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
 .zoom button{width:36px;height:36px;padding:0;font-size:18px}
 .hint{font-size:11px;color:var(--text-secondary);text-align:right;max-width:220px;text-wrap:balance}
+#xhair{position:absolute;left:50%;top:50%;width:6px;height:6px;margin:-3px 0 0 -3px;border-radius:50%;background:var(--panel-solid);box-shadow:0 0 0 1px var(--border);display:none;pointer-events:none;z-index:3}
+body.fps #xhair{display:block}
 @media (max-width:720px){
   .ui{right:max(12px,env(safe-area-inset-right,0px))}
   .bar{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;width:100%}
@@ -57,13 +59,14 @@ a.chip:hover{background:var(--hover)}
 <div id="wrap">
   <canvas id="c" style="width:100%;height:100%;display:block"></canvas>
   <div id="labels"></div>
+  <div id="xhair"></div>
 </div>
 <div class="ui">
   <div class="bar" role="toolbar" aria-label="Affichage">
     <div class="brand"><b>Appartement T3</b><small>62,6 m² · 5e étage</small></div>
     <div class="seg" role="group" aria-label="État"><button id="m-avant">Avant</button><button id="m-projet">Projet</button></div>
     <div class="seg" role="group" aria-label="Murs"><button id="b-low">Maquette</button><button id="b-full">Murs complets</button></div>
-    <div class="seg" role="group" aria-label="Caméra"><button id="b-top">Dessus</button><button id="b-persp">Perspective</button></div>
+    <div class="seg" role="group" aria-label="Caméra"><button id="b-top">Dessus</button><button id="b-persp">Perspective</button><button id="b-fps" title="Se promener dans l'appartement (ZQSD/WASD + souris)">Visite</button></div>
     <span class="sep"></span>
     <button id="b-furn" class="chip">Meubles</button>
     <label class="tog" for="lab"><input type="checkbox" id="lab">Noms</label>
@@ -842,13 +845,14 @@ function setMode(m){
   legA.style.display=m==='avant'?'flex':'none';
   document.getElementById('paintRow').style.display=m==='projet'?'flex':'none';
   if(typeof applyPaint==='function')applyPaint();
-  dirty=true;
+  colDirty=true;dirty=true;
 }
 const tgt=new THREE.Vector3(4.7,0,5.0);
 const st={az:0.35,el:0.95,dist:17};
 const focus={tv:{x:X(613),z:Z(493),d:3.35},all:{x:4.7,z:5.0,d:17},sejour:{x:X(505),z:Z(300),d:10},ch1:{x:X(578),z:Z(601),d:7},ch2:{x:X(620),z:Z(135),d:6.5},entree:{x:X(235),z:Z(460),d:6},sdb:{x:X(300),z:Z(635),d:6},balcon:{x:X(772),z:Z(360),d:9.5}};
 let cur='all',goal=null;
 function goTo(f,top){
+  if(fps)exitFps();
   cur=f;tgt.y=f==='tv'?1.22:0;const p=focus[f];
   const fit=Math.max(1,Math.min(2.2,1.25/cam.aspect));
   goal={x:p.x,z:p.z,az:top?0:f==='tv'?Math.PI:0.35,el:top?1.55:f==='tv'?0.16:0.95,dist:(top?p.d*0.9:p.d)*(f==='tv'?1:fit)};
@@ -864,18 +868,109 @@ function step(){
   dirty=true;
 }
 let dirty=true,showLab=false;
+let fps=false,yaw=0,pitch=0,px=4.7,pz=5.0,keys={},colliders=[],colDirty=true,lastT=0;
+const EYE=1.6,PRAD=0.2;
+const bFps=document.getElementById('b-fps'),hintEl=document.querySelector('.hint'),hintDefault=hintEl.textContent;
+function lockPointer(){if(!canvas.requestPointerLock)return;const r=canvas.requestPointerLock();if(r&&r.catch)r.catch(()=>{});}
+function buildColliders(){
+  colliders=[];
+  const b=new THREE.Box3();
+  scene.updateMatrixWorld(true);
+  const walk=o=>{o.children.forEach(m=>{
+    if(m.isMesh){b.setFromObject(m);if(b.min.y<1.5)colliders.push({x0:b.min.x,x1:b.max.x,z0:b.min.z,z1:b.max.z});}
+    else walk(m);
+  });};
+  [wallGroup,fixGroup,furnGroup,furnWall,furnTall,tallGroup].forEach(g=>{if(g.visible)walk(g);});
+}
+function collide(p){
+  for(let it=0;it<3;it++){
+    let hit=false;
+    for(const c of colliders){
+      const cx=Math.max(c.x0,Math.min(p.x,c.x1)),cz=Math.max(c.z0,Math.min(p.z,c.z1));
+      let dx=p.x-cx,dz=p.z-cz,d=dx*dx+dz*dz;
+      if(d>=PRAD*PRAD)continue;
+      hit=true;
+      if(d>1e-9){d=Math.sqrt(d);p.x=cx+dx/d*PRAD;p.z=cz+dz/d*PRAD;}
+      else{
+        const l=p.x-c.x0,r=c.x1-p.x,t=p.z-c.z0,b=c.z1-p.z,m=Math.min(l,r,t,b);
+        if(m===l)p.x=c.x0-PRAD;else if(m===r)p.x=c.x1+PRAD;else if(m===t)p.z=c.z0-PRAD;else p.z=c.z1+PRAD;
+      }
+    }
+    if(!hit)break;
+  }
+}
+let preFps=null;
+function enterFps(){
+  if(fps)return;
+  fps=true;goal=null;colDirty=true;preFps={az:st.az,el:st.el,dist:st.dist};
+  if(wallK<1)setWalls(1);
+  if(colDirty){buildColliders();colDirty=false;}
+  px=Math.max(X(170),Math.min(X(710),tgt.x));pz=Math.max(Z(25),Math.min(Z(695),tgt.z));
+  const p={x:px,z:pz};for(let i=0;i<4;i++)collide(p);px=p.x;pz=p.z;
+  const dir=new THREE.Vector3();cam.getWorldDirection(dir);
+  yaw=Math.atan2(-dir.x,-dir.z);pitch=Math.max(-0.7,Math.min(1.0,Math.asin(Math.max(-1,Math.min(1,dir.y)))));
+  document.body.classList.add('fps');
+  bFps.classList.add('on');document.getElementById('b-top').classList.remove('on');document.getElementById('b-persp').classList.remove('on');
+  hintEl.textContent='ZQSD / WASD pour avancer · souris pour regarder · Maj pour courir · Échap pour quitter';
+  cam.fov=70;cam.clearViewOffset();cam.updateProjectionMatrix();
+  lockPointer();
+  keys={};dirty=true;
+}
+function exitFps(){
+  if(!fps)return;
+  fps=false;keys={};
+  if(document.exitPointerLock)document.exitPointerLock();
+  document.body.classList.remove('fps');
+  bFps.classList.remove('on');document.getElementById('b-persp').classList.add('on');document.getElementById('b-top').classList.remove('on');
+  hintEl.textContent=hintDefault;
+  cam.fov=40;cam.updateProjectionMatrix();
+  tgt.set(px,0,pz);
+  st.az=yaw;st.el=Math.min(1.55,Math.max(0.2,-pitch));st.dist=preFps?preFps.dist:6;
+  resize();dirty=true;
+}
+bFps.onclick=()=>{fps?exitFps():enterFps();};
+document.addEventListener('pointerlockchange',()=>{if(document.pointerLockElement!==canvas)exitFps();});
+addEventListener('keydown',e=>{if(!fps)return;keys[e.code]=true;if(e.code.indexOf('Arrow')===0||e.code==='Space')e.preventDefault();});
+addEventListener('keyup',e=>{keys[e.code]=false;});
+addEventListener('blur',()=>{keys={};});
 function resize(){
   const w=wrap.clientWidth,h=wrap.clientHeight;
   const ui=document.querySelector('.ui').getBoundingClientRect(),lg=document.querySelector('.legend').getBoundingClientRect();
   const dy=Math.round(Math.max(0,ui.bottom-(h-lg.top))/2);
-  renderer.setSize(w,h,false);cam.aspect=w/h;cam.setViewOffset(w,h,0,-dy,w,h);cam.updateProjectionMatrix();dirty=true;
+  renderer.setSize(w,h,false);cam.aspect=w/h;
+  if(fps)cam.clearViewOffset();else cam.setViewOffset(w,h,0,-dy,w,h);
+  cam.updateProjectionMatrix();dirty=true;
 }
 function render(){
   requestAnimationFrame(render);
-  step();if(!dirty)return;dirty=false;
-  const ce=Math.cos(st.el);
-  cam.position.set(tgt.x+st.dist*ce*Math.sin(st.az),tgt.y+st.dist*Math.sin(st.el),tgt.z+st.dist*ce*Math.cos(st.az));
-  cam.lookAt(tgt);cam.updateMatrixWorld();
+  step();
+  if(colDirty){buildColliders();colDirty=false;}
+  if(fps){
+    const now=performance.now(),dt=lastT?Math.min(0.05,(now-lastT)/1000):0.016;lastT=now;
+    let fx=0,fz=0;
+    if(keys.KeyW||keys.ArrowUp)fz+=1;
+    if(keys.KeyS||keys.ArrowDown)fz-=1;
+    if(keys.KeyA||keys.ArrowLeft)fx-=1;
+    if(keys.KeyD||keys.ArrowRight)fx+=1;
+    if(fx||fz){
+      const sp=(keys.ShiftLeft||keys.ShiftRight?4.5:2.6)*dt,l=Math.hypot(fx,fz),sy=Math.sin(yaw),cy=Math.cos(yaw);
+      const p={x:px,z:pz};
+      p.x+=(-sy*fz+cy*fx)/l*sp;collide(p);
+      p.z+=(-cy*fz-sy*fx)/l*sp;collide(p);
+      px=p.x;pz=p.z;
+    }
+    cam.position.set(px,EYE,pz);
+    cam.rotation.order='YXZ';cam.rotation.set(pitch,yaw,0);
+    cam.updateMatrixWorld();
+    dirty=true;
+  }else{
+    lastT=0;
+    if(!dirty)return;
+    dirty=false;
+    const ce=Math.cos(st.el);
+    cam.position.set(tgt.x+st.dist*ce*Math.sin(st.az),tgt.y+st.dist*Math.sin(st.el),tgt.z+st.dist*ce*Math.cos(st.az));
+    cam.lookAt(tgt);cam.updateMatrixWorld();
+  }
   renderer.render(scene,cam);
   const w=wrap.clientWidth,h=wrap.clientHeight;
   labels.forEach(l=>{
@@ -885,28 +980,44 @@ function render(){
   });
 }
 let drag=null;
-wrap.addEventListener('pointerdown',e=>{goal=null;drag={x:e.clientX,y:e.clientY};wrap.setPointerCapture(e.pointerId);wrap.style.cursor='grabbing';});
+wrap.addEventListener('pointerdown',e=>{
+  if(fps){
+    if(document.pointerLockElement!==canvas)lockPointer();
+    drag={x:e.clientX,y:e.clientY};try{wrap.setPointerCapture(e.pointerId);}catch(_){}
+    return;
+  }
+  goal=null;drag={x:e.clientX,y:e.clientY};try{wrap.setPointerCapture(e.pointerId);}catch(_){}wrap.style.cursor='grabbing';
+});
 wrap.addEventListener('pointermove',e=>{
+  if(fps){
+    if(document.pointerLockElement===canvas||drag){
+      const mx=e.movementX!==undefined?e.movementX:e.clientX-drag.x,my=e.movementY!==undefined?e.movementY:e.clientY-drag.y;
+      yaw-=mx*0.0022;pitch=Math.max(-1.45,Math.min(1.45,pitch-my*0.0022));
+      if(drag)drag={x:e.clientX,y:e.clientY};
+      dirty=true;
+    }
+    return;
+  }
   if(!drag)return;
   st.az-=(e.clientX-drag.x)*0.008;
   st.el=Math.min(1.55,Math.max(0.2,st.el+(e.clientY-drag.y)*0.006));
   drag={x:e.clientX,y:e.clientY};dirty=true;
 });
-const end=()=>{drag=null;wrap.style.cursor='grab';};
+const end=()=>{drag=null;if(!fps)wrap.style.cursor='grab';};
 wrap.addEventListener('pointerup',end);wrap.addEventListener('pointercancel',end);
-wrap.addEventListener('wheel',e=>{e.preventDefault();goal=null;st.dist=Math.min(35,Math.max(2,st.dist*(1+Math.sign(e.deltaY)*0.08)));dirty=true;},{passive:false});
+wrap.addEventListener('wheel',e=>{e.preventDefault();if(fps)return;goal=null;st.dist=Math.min(35,Math.max(2,st.dist*(1+Math.sign(e.deltaY)*0.08)));dirty=true;},{passive:false});
 const bLow=document.getElementById('b-low'),bFull=document.getElementById('b-full');
 function setWalls(k){
   wallGroup.scale.y=k;furnWall.scale.y=k;paintGroup.scale.y=k;tallGroup.visible=k>=1;wallK=k;showFurniture();
   bLow.classList.toggle('on',k<1);bFull.classList.toggle('on',k>=1);
-  dirty=true;
+  colDirty=true;dirty=true;
 }
 let showFurn=true,wallK=1;
 const bFurn=document.getElementById('b-furn');
 function showFurniture(){
   furnGroup.visible=furnWall.visible=showFurn;furnTall.visible=showFurn&&wallK>=1;
   bFurn.classList.toggle('on',showFurn);bFurn.setAttribute('aria-pressed',showFurn);
-  dirty=true;
+  colDirty=true;dirty=true;
 }
 bFurn.onclick=()=>{showFurn=!showFurn;showFurniture();};
 const paints={
